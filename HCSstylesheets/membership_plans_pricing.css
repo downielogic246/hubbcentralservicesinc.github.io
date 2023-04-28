@@ -1,0 +1,291 @@
+.main-area{
+    background-image: url(/HubbCentralServices/Photos/member_large.jpg);
+}
+
+.mainContent{
+    height: max-content;
+}
+
+.plans{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'nothing bronz silv gol plat';
+    grid-column: 20% 20% 20% 20% 20%;
+    grid-row: 20% 11.43%;
+    width: 80%;
+    height: 100%;
+    color: var(--mainColour-color);
+    background-color: #f0f8ff29;
+    border-radius: 90px;
+    border-bottom-left-radius: 1px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: 1px solid black ;
+}
+
+.bronze, .silver, .gold, .platinum{
+    background-color: var(--footerColour-background-colour);
+    border: 1px outset black;
+    
+}
+.platinum{
+    border-top-right-radius: 1px;
+}
+
+.planTitle, .planPrice, .planValidfor{
+    padding-bottom: 2%;
+    text-transform: capitalize;
+}
+
+.planValidfor{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.planPrice{
+    font-weight: bold;
+    font-size: 50px;
+}
+.money{
+    font-size: 10px;
+}
+
+.details,.checked, .x ,.headings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.checked{  
+    color: rgb(0, 224, 0);
+}
+
+.x{
+    color: red;
+}
+
+.details, .checked{
+    font-size: 21px;
+}
+.selectBtn{
+    position: relative ;
+    width: 100%;
+    color: rgb(0, 224, 0);
+    height: fit-content;
+    font-size: 1rem;
+    color: var(--mainColour-color);
+    background: transparent;
+    border-width: 1px;
+    margin: 10px;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+
+.selectBtn:active, .selectBtn:hover{
+    background-color: rgb(0, 224, 0);
+}
+
+.smallerPlan{
+    display: none;
+}
+
+@media (orientation: landscape) {
+    
+    @media screen and (max-width: 900px){
+        .planPrice{
+            font-size: 40px;
+        }
+
+        .planValidfor{
+            font-size: smaller;
+        }
+
+        .plans{
+            width:fit-content
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .planPrice{
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 790px) {
+        .planPrice{
+            font-size: 20px;
+        }
+    
+    }
+
+@media screen and (max-width: 768px){
+    
+   .plans{
+        display: none;
+   }
+
+   .smallerPlan{
+    position: relative;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+   }
+
+   .selectBtn{
+        width: 60%;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        padding: 10px;
+   }
+
+   .small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 15%;
+        border-radius: 20px;
+        padding: 20px;
+   }
+
+   .b{
+    background-color: #cd8032;
+   }
+
+   .s{
+    background-color: #C0c0c0;
+   }
+
+   .g{
+    background-color: #d6b600;
+   }
+
+   .p{
+    background-color: #48BEFF;
+   }
+
+   article{
+    font-size: 1.25rem;
+   }
+
+   .planTitle{
+    font-size: 1.65rem;
+   }
+    }
+    @media screen and (max-width: 425px){
+        .smallerPlan{
+            width: 80%;
+        }   
+    
+        .planTitle{
+            font-size: 1.5rem;
+        }
+
+        .small article{
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .small article{
+            font-size: .9rem;
+        }
+    }
+
+    @media screen and (max-width: 320px){
+        .planTitle{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    @media (max-width: 980px){
+        .plans{
+            display: none;
+        }
+
+       .mainContent{
+            height: 100vh;
+        }
+    
+       .smallerPlan{
+        position: relative;
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 70%;
+        width: 50%;
+        padding: 20px;
+       }
+    
+       .selectBtn{
+            width: 60%;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            padding: 10px;
+       }
+    
+       .small{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 15%;
+            border-radius: 20px;
+            padding: 20px;
+       }
+    
+       .b{
+        background-color: #cd8032;
+       }
+    
+       .s{
+        background-color: #C0c0c0;
+       }
+    
+       .g{
+        background-color: #d6b600;
+       }
+    
+       .p{
+        background-color: #48BEFF;
+       }
+    
+       article{
+        font-size: 1.25rem;
+       }
+    
+       .planTitle{
+        font-size: 1.65rem;
+       }
+    }
+
+    @media (max-width: 560px){
+        .smallerPlan{
+            width: 80%;    
+        }
+    }
+
+    @media (max-width: 300px){
+        .smallerPlan{
+            width: 100%;    
+        }
+    }
+}

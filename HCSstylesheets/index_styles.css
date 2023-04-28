@@ -1,0 +1,214 @@
+.main-area{
+    background-image: url(/HubbCentralServices/Photos/home_large.jpg);
+    max-height: 100%;
+    transition: all 2s ease-in;
+}
+.title{
+    padding: 0;
+    border:0;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 6px;
+    word-spacing: 3px;
+}
+
+.main-direct, .main-link{
+    font-size: 2rem;
+    color: var(--mainColour-color);
+    text-transform: capitalize;
+}
+
+
+.feed-container{
+    background-color: var(--sectionColour-colour);
+    max-width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.feed{
+    color:var(--blackColour-colour);
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 40% 60%;
+    border: 1px solid rgb(211, 211, 211)
+}
+
+.image-container, .desc-container{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    max-height: 400px;
+    padding: 20px;
+}
+
+.image-container{
+    justify-content: center;
+    align-items: center;
+    border-right: 0;
+    min-height: 300px;
+}
+
+.image-container img{
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.desc-container{
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.desc-title, .desc-container p{
+    padding: 20px;
+}
+
+.desc-title{
+    font-size: 2rem;
+}
+
+.desc-container p{
+    font-size: 20px;
+}
+
+@media(orientation: landscape){
+    @media(max-width: 1657px){
+        .mainContent{
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+    }
+
+    @media(max-width: 1335px){
+        .image-container, .desc-container{
+            max-height: 350px;
+        }
+        .image-container img{
+            min-height: 275px;
+            max-height: 275px;
+            min-width: 400px;
+            max-width: 400px;
+        }
+    }
+
+    @media(max-width: 1304px){
+        .title{
+            font-size: 5rem;
+        }
+        .main-direct,.main-link{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media(max-width: 1116px){
+        .title{
+            font-size: 4rem;
+        }
+    }
+
+    @media(max-width: 1075px){
+        .image-container, .desc-container{
+            max-height: 100%;
+        }
+        .image-container img{
+            min-height: 175px;
+            max-height: 175px;
+            min-width: 300px;
+            max-width: 300px;
+        }
+    }
+
+    @media(max-width: 927px){
+        .title{
+            font-size: 3rem;
+        }
+        .main-direct,.main-link{
+            font-size: 1.25rem;
+        }
+    }
+
+    @media(max-width: 772px){
+        .image-container{
+            max-height: 175px;
+        }
+        .desc-container{
+            height: fit-content;
+        }
+        .image-container img{
+            min-height: 175px;
+            max-height: 175px;
+            min-width: 250px;
+            max-width: 250px;
+        }
+    }
+
+    @media(max-width: 676px){
+        .image-container, .desc-container{
+            height: 100%;
+        }
+        .image-container img{
+            min-height: 100px;
+            max-height: 100px;
+            min-width: 200px;
+            max-width: 200px;
+        }
+    }
+}
+
+@media(orientation: portrait){
+  
+    @media(max-width: 1304px){
+        .title{
+            font-size: 5rem;
+        }
+        .main-direct,.main-link{
+            font-size: 1.5rem;
+        }
+        .image-container, .desc-container{
+            max-height: 300px;
+        }
+        .image-container img{
+            min-height: 250px;
+            max-height: 250px;
+            min-width: 400px;
+            max-width: 400px;
+        }
+        .mainContent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:90vh;
+        }
+    }
+
+    @media(max-width: 1116px){
+        .title{
+            font-size: 4rem;
+        }
+        
+        .image-container img{
+            min-height: 200px;
+            max-height: 200px;
+            min-width: 350px;
+            max-width: 350px;
+        }
+    }
+
+    @media(max-width: 927px){
+        .title{
+            font-size: 3rem;
+        }
+        .main-direct,.main-link{
+            font-size: 1.25rem;
+        }
+
+        .feed{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}

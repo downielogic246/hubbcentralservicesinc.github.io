@@ -1,0 +1,67 @@
+.main-area{
+    background-image: url(/HubbCentralServices/Photos/PP_large.jpg);
+}
+
+.mainContent{
+    height: max-content;
+}
+
+.policy-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: var(--mainColour-color);
+}
+.lastUpdate{
+    color: var(--mainColour-color);
+}
+
+.ppMainHeading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.ppMainHeading{
+    font-size: 2rem;
+}
+
+.ppHeading-container{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.ppHeading{
+    font-size: 1.25rem;
+}
+
+.ppArticle-container{
+    padding: 5px 5px 20px 5px;
+}
+
+.ppArticle{
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+}
+
+.ppSubHeading-container{
+    display: flex;
+}
+
+.ppArticle ol{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+@media (orientation: portrait) {
+    @media (max-width: 450px){
+        .title{
+            margin-top: 40%;
+        }
+    }
+}

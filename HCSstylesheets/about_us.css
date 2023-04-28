@@ -1,0 +1,433 @@
+.main-area{
+    background-image: url(/HubbCentralServices/Photos/about_large.jpg);
+    background-attachment: fixed;
+}
+
+.about-container{
+    width: 75%;
+    height: max-content;
+    display: grid;
+    grid-template-areas: 'details image';
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    background-color: var(--footerColour-background-colour);
+    border-radius: 2px;
+    box-shadow: 2px 3px 6px 0px rgba(63, 63, 63, 0.484);
+}
+
+.aboutus-infoContainer{
+    width: 100%;
+    grid-area: details;
+    display: grid;
+    grid-template-areas: 'left center right';
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+}
+
+.aboutus-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: image;
+}
+
+.aboutus-img img{
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.aboutus-info{
+    padding: 5% 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.aboutusHeading{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--mainColour-color);
+    padding: 0 2px 10px 2px;
+}
+
+.aboutusDescription{
+    height: 150px;
+    font-style: italic;
+    color: var(--mainColour-color);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.learnbtnContainer{
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.learnMore{
+    padding: 10px 15px;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 2px groove var(--mainColour-color);
+    font-weight: bold;
+    color: var(--mainColour-color);
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.learnMore:hover, [class*="Btn"]:hover{
+    background-color:  rgba(97, 97, 97, 0.273)
+}
+
+.learnMore:active, [class*="Btn"]:active{
+    background-color:  rgba(97, 97, 97, 0.412)
+}
+
+[class*="Btn"]{
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    color: var(--mainColour-color);
+}
+
+#history, #staff{
+    width: 100%;
+    height: max-content;
+    background-color: #050505c3;
+}
+
+[class*="-sub"]{
+    border-top: 1px solid var(--footerColour-background-colour);
+    border-bottom: 1px solid var(--footerColour-background-colour);
+    height: max-content;
+    padding: 3%;
+}
+
+.sub-areaTitle{
+    font-size: 2rem;
+    color: var(--mainColour-color);
+    text-transform: capitalize;
+}
+
+[class*="subContent-"]{
+    padding: 30px 0;
+    color: var(--mainColour-color);
+    font-size: 1.75rem;
+}
+
+.subContent-staff{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 10px;
+    grid-template-rows: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColour-color);
+    height: fit-content;
+    padding: 10%;
+}
+.employeePhoto{
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.employeeName{
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.employeeRole{
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.employeeContact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    row-gap: 10px;
+    font-size: 1rem;
+}
+
+label{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media (orientation: landscape){
+    @media(max-width: 2133px){
+        .aboutusHeading{
+            font-size: 3rem;
+        }
+
+        .aboutusDescription{
+            font-size: 1.75rem;
+        }
+    }
+
+    @media(max-width: 1609px){
+        .aboutusHeading{
+            font-size: 2.75rem;
+        }
+
+        .aboutusDescription{
+            font-size: 1.5rem;
+        }
+
+        .employeeName{
+            font-size: 1.75rem;
+        }
+    }
+
+    @media(max-width: 1478px){
+        .aboutusHeading{
+            font-size: 2rem;
+        }
+
+        .aboutusDescription, .learnMore{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 1178px) {
+        .mainContent{
+            height: max-content;
+        }
+        .about-container{
+            display: grid;
+            grid-template-areas: 'image'
+            'details'            ;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 100%;
+        }
+
+        .subContent-staff{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% ;
+            gap: 20px;
+        }
+
+        .subContent-history{
+            font-size: 1.25rem;
+        }
+    }
+    
+    @media (max-width: 1106px) {
+        
+
+        .subContent-staff{
+            grid-template-columns: 27% 27% 27% ;
+            gap: 20px;
+        }
+
+        .subContent-history{
+            font-size: 1.25rem;
+        }
+    }
+
+    @media(max-width: 1030px){
+        
+        .subContent-staff{
+            grid-template-columns: 30% 30%;
+            gap: 30px;
+        }
+    }
+    @media(max-width: 936px){
+        
+        .subContent-staff{
+            
+            gap: 10px;
+        }
+    }
+    @media(max-width: 930px){
+        
+        .subContent-staff{
+            grid-template-columns: 50%;
+            gap: 0;
+        }
+    }
+    @media(max-width: 610px){
+        .aboutusHeading{
+            font-size: 1.75rem;
+        }
+    
+        .aboutusDescription, .learnMore{
+            font-size: 1rem;
+        }
+        
+        .aboutus-img img{
+            max-width: 250px;
+            max-height: 200px;
+        }
+    }
+    @media(max-width: 562px){
+        .subContent-staff{
+            grid-template-columns: 70%;
+        }
+    }
+}
+
+@media (orientation: portrait){
+    @media(max-width: 2133px){
+        .aboutusHeading{
+            font-size: 3rem;
+        }
+
+        .aboutusDescription{
+            font-size: 1.75rem;
+        }
+    }
+
+    @media(max-width: 1609px){
+        .aboutusHeading{
+            font-size: 2.75rem;
+        }
+
+        .aboutusDescription{
+            font-size: 1.5rem;
+        }
+
+        .employeeName{
+            font-size: 1.75rem;
+        }
+    }
+
+    @media(max-width: 1478px){
+        .aboutusHeading{
+            font-size: 2rem;
+        }
+
+        .aboutusDescription, .learnMore{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 1178px) {
+        .mainContent{
+            height: max-content;
+        }
+        .about-container{
+            display: grid;
+            grid-template-areas: 'image'
+            'details'            ;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 100%;
+        }
+
+        .subContent-staff{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% ;
+            gap: 20px;
+        }
+
+        .subContent-history{
+            font-size: 1.25rem;
+        }
+    }
+    
+    @media (max-width: 1106px) {
+        
+
+        .subContent-staff{
+            grid-template-columns: 27% 27% 27% ;
+            gap: 20px;
+        }
+
+        .subContent-history{
+            font-size: 1.25rem;
+        }
+    }
+
+    @media(max-width: 1030px){
+        
+        .subContent-staff{
+            grid-template-columns: 30% 30%;
+            gap: 30px;
+        }
+    }
+    @media(max-width: 936px){
+        
+        .subContent-staff{
+            
+            gap: 10px;
+        }
+    }
+    @media(max-width: 930px){
+        
+        .subContent-staff{
+            grid-template-columns: 50%;
+            gap: 0;
+        }
+    }
+    @media(max-width: 610px){
+        .aboutusHeading{
+            font-size: 1.75rem;
+        }
+    
+        .aboutusDescription, .learnMore{
+            font-size: 1rem;
+        }
+        
+        .aboutus-img img{
+            max-width: 250px;
+            max-height: 200px;
+        }
+    }
+    @media(max-width: 562px){
+        .subContent-staff{
+            grid-template-columns: 70%;
+        }
+
+        .about-container{
+            width: 100%;
+        }
+
+        .aboutus-img img{
+            max-width: 90%;
+        }
+
+        .mainContent{
+            height: 100vh;
+        }
+
+    }
+
+    @media(max-width: 336px){
+        
+        .aboutusHeading{
+            font-size: 1.25rem;
+        }
+
+        .learnMore{
+            font-size: 0.75rem;
+        }
+
+        .about-container{
+            height: 100%;
+        }
+
+    }
+}

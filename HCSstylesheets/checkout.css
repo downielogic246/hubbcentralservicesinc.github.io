@@ -1,0 +1,189 @@
+.checkoutContainer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #050505a4;
+    z-index: 9999999;
+}
+
+.checkout{
+    text-transform: capitalize;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height:max-content ;
+    background-color: var(--mainColour-color);
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+
+.checkoutTitle{
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    width: 60%;
+    border-bottom: 1px solid #050505;
+}
+
+.checkoutInfo{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    background-color: transparent;
+    top: 50%;
+    width: 60%;
+    height: max-content;
+}
+
+.applyBtns{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.online, .f2f{
+    height: fit-content;
+    width: max-content;
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: transparent;
+    text-decoration: none;
+    color: #48BEFF;
+    border-color: #48BEFF;
+    border-radius: 50px;
+    border-style: groove;
+    text-shadow: 1px 1px grey;
+    cursor: pointer;
+    text-align: center;
+    margin:20%;
+}
+
+.online:hover, .f2f:hover{
+    background-color: #48BEFF;
+    color: var(--mainColour-color);
+}
+
+.f2f-container{
+    position: relative;
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: 'name contact email'
+    'date date date'
+    'submit submit submit';
+    width: 100%;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+}
+
+[class*="client"]{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[id*="c"]{
+    width: 90%;
+    height: 40%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.clientName{
+    
+    grid-area: name;
+}
+.clientDate{
+    grid-area: date;
+}
+.clientPhone{
+    grid-area: contact;
+}
+.clientEmail{
+    grid-area: email;
+}
+.submit{
+    grid-area: submit;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#submitClient{
+    width: 30%;
+    padding: 15px 10px;
+    background-color: var(--footerColour-background-colour);
+}
+
+
+.close{
+    position: absolute;
+    right: 7%;
+    top:7%;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.close:hover{
+    color: rgba(128, 128, 128, 0.419);
+}
+
+/* to remove anything from the screen */
+.no-show{
+   display: none;
+}
+
+.goBack{
+    padding-top: 10px;
+    position: relative;
+    display: block;
+    left: 0;
+    background: transparent;
+    border: 0;
+    text-decoration: solid;
+    letter-spacing: 2px;
+}
+
+.goBack:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 998px) {
+    .checkout{
+        width: max-content;
+    }
+}
+@media screen and (max-width: 730px) {
+    .f2f-container{
+        position: relative;
+        margin-top: 10%;
+        display: grid;
+        grid-template-areas: 'name '
+        'contact' 
+        'email'
+        'date'
+        'submit';
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+}
