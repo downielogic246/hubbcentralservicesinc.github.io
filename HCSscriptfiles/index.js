@@ -2,7 +2,7 @@ const slides = [
     {
         title: "need a job?",
         quote: "click here to see any jobs currently available internationally & regionally",
-        photo: "/HubbCentralServices/Photos/jobs_large.jpg",
+        photo: "Photos/jobs_large.jpg",
         link: `<i class="fa-sharp fa-solid fa-link"></i>
         jobs`
     }
@@ -10,7 +10,7 @@ const slides = [
     {
         title: "utility bill due?",
         quote: "click here",
-        photo:"/HubbCentralServices/Photos/services_large.jpg",
+        photo:"Photos/services_large.jpg",
         link: `<i class="fa-sharp fa-solid fa-link"></i>
         services`
     }    
