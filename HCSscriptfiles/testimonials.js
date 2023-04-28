@@ -1,26 +1,26 @@
 const reviews = [
     {
-        name: "Mardanca danca",
+        name: "Jack Smith",
         comment: "yabba bddsifhdufduhfaufhausdfdubadfhab sdfhhsfusn suhsduf hshf s",
     },
     {
-        name: "Paully ault",
+        name: "Paul Duder",
         comment: "fsfwf arg zfgshtebtyjtuk ry jdj  jfhj usf shj dyjwy",
     },
     {
-        name: "john boy oh boy",
+        name: "John Johnson",
         comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
     },
     {
-        name: "dixonnater45",
+        name: "Jaden Seal",
         comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
     },
     {
-        name: "sheepydan",
+        name: "Jaxson Jackson",
         comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
     },
     {
-        name: "jkyle pohhhy",
+        name: "Kyle Woodland",
         comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
     },
 ]
