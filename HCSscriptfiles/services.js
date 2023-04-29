@@ -9,79 +9,79 @@ const services = [
         id:"RDL",
         name: "Renewal of Driver's License",  
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/RDL.jpg" 
+        photo: "Photos/RDL.jpg" 
     },
     {
         id:"UVA",
         name:"US Visa Application",
         price: "BBD $400.00",
-        photo: "/HubbCentralServices/Photos/UVA.jpg"
+        photo: "Photos/UVA.jpg"
     },
     {
         id:"CETA",
         name:"Canadian ETA",
         price: "BBD $40.00",
-        photo: "/HubbCentralServices/Photos/CETA.jpg"
+        photo: "Photos/CETA.jpg"
     },
     {
         id:"UBP",
         name:"Utility Bill Payments",
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/UBP.jpg"
+        photo: "Photos/UBP.jpg"
     },
     {
         id:"CV",
         name:"CV / Resume Writing",
         price: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/CV.jpg"
+        photo: "Photos/CV.jpg"
     },
     {
         id:"TN",
         name: "Tamis Numbers",
         price: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/TN.jpg"
+        photo: "Photos/TN.jpg"
     },
     {
         id:"LT",
         name: "Land Tax",
         price: "BBD $20.00",
-        photo: "/HubbCentralServices/Photos/LT.jpg"
+        photo: "Photos/LT.jpg"
     },
     {
         id:"IT",
         name:"Income Tax",
         price: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/IT.jpg"
+        photo: "Photos/IT.jpg"
     },
     {
         id:"PCOC",
         name:"Police Certificate of Character",
         price: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/PCOC.jpg"
+        photo: "Photos/PCOC.jpg"
     },
     {
         id:"PIT",
         name:"Prison Inmate Top-Ups",
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg"
     },
     {
         id:"EALI",
         name:"Employment Agency Local & International",
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg"
     },
     {
         id:"IL",
         name:"Invitation Letters",
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg"
     },
     {
         id:"DP",
         name:"Document Preparations",
         price: "Price varies",
-        photo: "/HubbCentralServices/Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg"
     },
 
 ]
@@ -152,7 +152,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     const item = document.getElementById(`${e.id}`);
 
-    item.style.backgroundImage = `url(/HubbCentralServices/Photos/${e.id}.jpg`;
+    item.style.backgroundImage = `url(Photos/${e.id}.jpg`;
 
     item.style.backgroundSize = "cover"});
     
