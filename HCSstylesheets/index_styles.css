@@ -1,5 +1,5 @@
 .main-area{
-    background-image: url(/HubbCentralServices/Photos/home_large.jpg);
+    background-image: url(Photos/home_large.jpg);
     max-height: 100%;
     transition: all 2s ease-in;
 }
