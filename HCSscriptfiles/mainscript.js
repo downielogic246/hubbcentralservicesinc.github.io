@@ -40,6 +40,8 @@ closeNav.addEventListener("click", ()=>{
 
 navLinks.forEach(link => {
     link.addEventListener("click", ()=>{
-        closeNav.click();
+        if(link.childNodes[1].href.slice(-1) != '#'){
+            closeNav.click();
+        }
     })
 })
