@@ -1,6 +1,6 @@
 const small_services = [
     "Circulation of CV/Resume to employers",
-    "Free 1/2 interview clinic",
+    "Free 1/2 hour interview clinic",
     "Police Certificate of Character",
     "Free Tamis Number",
     "Free Workshop experience for one family member or friend",
