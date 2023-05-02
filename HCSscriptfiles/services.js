@@ -86,6 +86,7 @@ const services = [
 
 ]
 
+
 const servicesBtns = document.querySelectorAll(".serviceBtn");
 
 const serviceHeadingTitleContainer = document.querySelector(".serviceHeadingtitle-container");
@@ -95,6 +96,7 @@ const serviceHeadingPrice = document.querySelector(".servicesPrice");
 const servicesContainer = document.querySelector(".services-container");
 
 let index = 0;
+
 
 setInterval(()=>{
     

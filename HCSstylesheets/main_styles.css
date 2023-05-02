@@ -25,8 +25,11 @@ body{
     display: none;
 }
 
-.menuBtn:active, .menuBtn:hover{
+.menuBtn:checked{
     color: #050505;
+}
+.menuBtn:hover{
+    color: rgb(161, 161, 161);
 }
 
 .menu-socials{
