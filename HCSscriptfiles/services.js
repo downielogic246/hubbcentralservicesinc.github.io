@@ -131,6 +131,55 @@ const onlinePaymentMethod = document.querySelector(".online");
 
 const backToPay = document.querySelector(".goBack");
 
+const selectOptions = document.getElementById("servicesList");
+// console.log(selectOptions)
+
+selectOptions.addEventListener("change", ()=>{
+    console.log(selectOptions.value)
+    
+    window.localStorage.setItem("checkout", true);
+    checkOutContainer.classList.remove("no-show");
+
+    services.forEach( e => {
+    if (e.name == selectOptions.value){
+        if (e.amount == false){
+            onlinePaymentMethod.classList.add('no-show');
+            f2f.click();
+            backToPay.classList.add('no-show')
+        } else {
+            backToPay.click();
+            onlinePaymentMethod.classList.remove('no-show');
+            backToPay.classList.remove('no-show')
+           onlinePaymentMethod.href = e.link 
+        }
+
+    }
+})
+})
+
+
+// selectOptions.forEach( opt => {
+// //     opt.addEventListener("click", ()=>{
+//         window.localStorage.setItem("checkout", true);
+//         checkOutContainer.classList.remove("no-show");
+
+//     services.forEach( e => {
+//         if (e.name == opt.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML){
+//             if (e.amount == false){
+//                 onlinePaymentMethod.classList.add('no-show');
+//                 f2f.click();
+//                 backToPay.classList.add('no-show')
+//             } else {
+//                 backToPay.click();
+//                 onlinePaymentMethod.classList.remove('no-show');
+//                 backToPay.classList.remove('no-show')
+//                onlinePaymentMethod.href = e.link 
+//             }
+
+//         }
+//     })
+//     })
+// })
 
 // console.log(slideShowPayBtn)
 
