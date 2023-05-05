@@ -467,6 +467,9 @@
         .job-listingArea{
             width: 90%;
         }
+        .apply-container{
+            width: 80%;
+        }
     }
     
     @media (max-width: 626px){
@@ -532,6 +535,10 @@
 
         .title{
             margin-top: 20%;
+        }
+        
+        .apply-container{
+            width: 95%;
         }
     }
     
