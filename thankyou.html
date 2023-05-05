@@ -6,11 +6,105 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css">
-    <link rel="stylesheet" href="HCSstylesheets/thank_you.css">
     <link rel="hubcentralservicesinc icon" type="x-icon" href="Photos/Hubb Central Services Inc_200.png">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(/Photos/thanks.jpg);
+            color:  #1f4454;
+        }
+
+        .thanks_container{
+            background-color: #050505d0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .thanks{
+            width: max-content;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .thanksTitle{
+            font-size: 14rem;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-transform: capitalize;
+        }
+
+        article{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        article > a{
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #1f4454;
+            font-size: 2rem;
+        }
+
+        .returnBtnContainer{
+            position: absolute;
+            top:0;
+            right: 0;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .returnBtnContainer > a{
+            color:  #1f4454
+        }
+    </style>
+
     <title>Thank You!</title>
 </head>
 <body>
+    <div class="thanks_container">
+        <div class="thanks">
+            <h1 class="thanksTitle">
+                thank you!!
+            </h1>
+            <article>
+                <h2>
+                    Feels free to visit our socials at:
+                </h2>
+                <a href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    facebook
+                </a>
+                <a href="https://www.instagram.com/recruitinghubb/?igshid=YmMyMTA2M2Y%3D">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    instagram
+                </a>
+                <a href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237"><i class="fa-brands fa-tiktok"></i>
+                    tiktok
+                </a>
+            </article>
+        </div>
+
+        <div class="returnBtnContainer">
+            <a href="index.html">Return Home</a>
+        </div>
+
+    </div>
     
 </body>
 </html>
