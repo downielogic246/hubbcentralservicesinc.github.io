@@ -151,10 +151,7 @@
     color: rgba(128, 128, 128, 0.419);
 }
 
-/* to remove anything from the screen */
-.no-show{
-   display: none;
-}
+
 
 #day{
     padding: 10px 0px;
@@ -387,4 +384,9 @@
             height: 100% !important;
         }
     }
+}
+
+/* to remove anything from the screen */
+.no-show{
+   display: none;
 }

@@ -3,85 +3,113 @@ const services = [
         id:"ML",
         name: "Micro Loans",
         priceString: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/ML.jpg"
+        photo: "/HubbCentralServices/Photos/ML.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"RDL",
         name: "Renewal of Driver's License",  
         priceString: "Price varies",
-        photo: "Photos/RDL.jpg" 
+        photo: "Photos/RDL.jpg",
+        amount: false,
+        link: "", 
     },
     {
         id:"UVA",
         name:"US Visa Application",
         priceString: "BBD $400.00",
-        photo: "Photos/UVA.jpg"
+        photo: "Photos/UVA.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"CETA",
         name:"Canadian ETA",
         priceString: "BBD $40.00",
-        photo: "Photos/CETA.jpg"
+        photo: "Photos/CETA.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"UBP",
         name:"Utility Bill Payments",
         priceString: "Price varies",
-        photo: "Photos/UBP.jpg"
+        photo: "Photos/UBP.jpg",
+        amount: false,
+        link: "",
     },
     {
         id:"CV",
         name:"CV / Resume Writing",
         priceString: "BBD $50.00",
-        photo: "Photos/CV.jpg"
+        photo: "Photos/CV.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"TN",
         name: "Tamis Numbers",
         priceString: "BBD $50.00",
-        photo: "Photos/TN.jpg"
+        photo: "Photos/TN.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"LT",
         name: "Land Tax",
         priceString: "BBD $20.00",
-        photo: "Photos/LT.jpg"
+        photo: "Photos/LT.jpg",
+        amount:true,
+        link: "",
     },
     {
         id:"IT",
         name:"Income Tax",
         priceString: "BBD $50.00",
-        photo: "Photos/IT.jpg"
+        photo: "Photos/IT.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"PCOC",
         name:"Police Certificate of Character",
         priceString: "BBD $50.00",
-        photo: "Photos/PCOC.jpg"
+        photo: "Photos/PCOC.jpg",
+        amount: true,
+        link: "",
     },
     {
         id:"PIT",
         name:"Prison Inmate Top-Ups",
         priceString: "Price varies",
-        photo: "Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg",
+        amount: false,
+        link: "",
     },
     {
         id:"EALI",
         name:"Employment Agency Local & International",
         priceString: "Price varies",
-        photo: "Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg",
+        amount: false,
+        link: "",
     },
     {
         id:"IL",
         name:"Invitation Letters",
         priceString: "Price varies",
-        photo: "Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg",
+        amount: false,
+        link: "",
     },
     {
         id:"DP",
         name:"Document Preparations",
         priceString: "Price varies",
-        photo: "Photos/usvisa.jpg"
+        photo: "Photos/usvisa.jpg",
+        amount: false,
+        link: "",
     },
 
 ]
@@ -95,6 +123,38 @@ const serviceHeadingPrice = document.querySelector(".servicesPrice");
 
 const servicesContainer = document.querySelector(".services-container");
 
+
+const slideShowPayBtn = document.querySelector(".servicesPayButton");
+
+
+const onlinePaymentMethod = document.querySelector(".online");
+
+const backToPay = document.querySelector(".goBack");
+
+
+// console.log(slideShowPayBtn)
+
+
+slideShowPayBtn.addEventListener("click", ()=> {
+    window.localStorage.setItem("checkout", true);
+            checkOutContainer.classList.remove("no-show");
+
+    services.forEach( e => {
+        if (e.name == slideShowPayBtn.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML){
+            if (e.amount == false){
+                onlinePaymentMethod.classList.add('no-show');
+                f2f.click();
+                backToPay.classList.add('no-show')
+            } else {
+                backToPay.click();
+                onlinePaymentMethod.classList.remove('no-show');
+                backToPay.classList.remove('no-show')
+               onlinePaymentMethod.href = e.link 
+            }
+
+        }
+    })
+})
 
 let index = 0;
 
@@ -158,12 +218,42 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     item.style.backgroundSize = "cover"});
     
-    const payBtn = document.querySelectorAll(".servicesPayButton");
-    
+    const payBtn = document.querySelectorAll(".pay");
+
+    const f2f = document.querySelector(".f2f");
     payBtn.forEach( btn => {
         btn.addEventListener("click", ()=>{
             window.localStorage.setItem("checkout", true);
             checkOutContainer.classList.remove("no-show");
+
+            services.forEach( e => {
+                    if (btn.parentNode.parentElement.id == e.id){
+                        if (e.amount == false){
+                            onlinePaymentMethod.classList.add('no-show');
+                            f2f.click();
+                            backToPay.classList.add('no-show')
+                        } else {
+                            backToPay.click();
+                            onlinePaymentMethod.classList.remove('no-show');
+                            backToPay.classList.remove('no-show')
+                           onlinePaymentMethod.href = e.link 
+                        }
+                        
+                    }
+                })
+
+            // if (btn.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML === "Price varies"){
+            //     onlinePaymentMethod.classList.add('no-show');
+            // } else {
+                
+            // }
+            
+            // if (btn.id == "inHeadingPayButton"){
+
+            //     const choosenService = serviceHeadingTitle.innerHTML;
+
+                
+            // }
         })
     })
 
@@ -172,8 +262,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     serviceHeadingPrice.innerHTML = `${services[0].priceString}`;
 
     const payServices = document.querySelectorAll(".pay");
-
-    const online = document.querySelector(".online");
 
 });
 

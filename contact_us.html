@@ -41,36 +41,43 @@
                             ask us anything
                         </h1>
                         <div class="form-container">
-                            <form action="" method="post">
+                            <form action="https://formsubmit.co/hubbcentralservices.info@gmail.com" method="post">
+                                <input type="hidden" name="_template" value="basic">
                                 <div class="customerInfo">
                                     <div class="clientName">
                                         <!-- <label for="clientName">Name*</label> -->
-                                        <input type="text" id="clientName" placeholder="Name" class="contactData" required>
+                                        <input type="name" id="clientName" placeholder="Name" class="contactData" required>
                                     </div>
                                     <div class="clientEmail">
                                         <!-- <label for="clientEmail">Email*</label> -->
-                                        <input type="text" id="clientEmail" placeholder="Email" class="contactData" required>
+                                        <input type="email" id="clientEmail" placeholder="Email" class="contactData" required>
                                     </div>
                                     <div class="clientPhone">
                                         <!-- <label for="clientPhone">Phone*</label> -->
-                                        <input type="text" id="clientPhone"
+                                        <input type="phone" id="clientPhone"
                                         placeholder="Contact Number" class="contactData" required>
                                     </div>
                                     <div class="clientAddress">
                                         <!-- <label for="clientAddress">Address*</label> -->
-                                        <input type="text" id="clientAddress"
+                                        <input type="address" id="clientAddress"
                                         placeholder="Address" class="contactData" required>
                                     </div>
                                     <div class="clientSubject">
                                         <!-- <label for="clientSubject">Subject*</label> -->
-                                        <input type="text" id="clientSubject"
-                                        placeholder="Subject of Query" class="contactData" required>
+                                        <input type="text" id="subject"
+                                        name="_subject" placeholder="Subject of Query" class="contactData" required>
                                     </div>
                                     <div class="clientMessage">
                                         <!-- <label for="clientMessage">Message*</label> -->
                                         <textarea type="text" id="clientMessage" cols="30" rows="5" placeholder="Type query here..." class="contactData" required></textarea>
                                     </div>
+
+                                    
+                                <input type="hidden" name="_next" value="https://mardanca.github.io/hubbcentralservicesinc.github.io/thankyou.html">
                                 </div>
+                        <input type="hidden" name="_cc" value="info@hubbteam.com">
+
+                        <input type="hidden" name="_autoresponse" value="Hey there, your appointment has be submitted. If there are any challenges, we will contact you directly via phonecall or email. HAVE A GOOD DAY!!!">
                                 <button  id="submit" type="submit">Submit</button>
                             </form>
                         </div>

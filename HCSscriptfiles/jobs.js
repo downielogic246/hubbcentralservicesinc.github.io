@@ -118,6 +118,9 @@ const filterContent = document.querySelector(".btnContainer");
 const applyBtn = document.querySelector(".applyNow");
 const applyForm = document.querySelector(".applyForm");
 const closeApply = document.querySelector(".closeApply");
+const subjectOfEmail = document.getElementById("subject");
+const careerTitle = document.querySelector(".careerTitle");
+
 
 btns.forEach( btn => {
     btn.addEventListener("click", ()=>{
@@ -151,6 +154,8 @@ btns.forEach( btn => {
 
 applyBtn.addEventListener("click", ()=>{
     applyForm.style.display = "flex";
+    subjectOfEmail.value = `Application Submission for ${careerTitle.textContent}`
+
 })
 
 closeApply.addEventListener("click", ()=>{
