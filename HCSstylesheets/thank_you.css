@@ -1,0 +1,10 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://mardanca.github.io/hubbcentralservicesinc.github.io/Photos/thanks.jpeg);
+}

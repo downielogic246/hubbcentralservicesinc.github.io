@@ -15,7 +15,7 @@ const closeMember = document.querySelector(".closeMember");
 const memberContainerForSmall = document.querySelector(".memberInfo-container");
 const memberTitle = document.querySelector(".memberInfo-title");
 const memberServices = document.querySelector(".memberInfo-services");
-const subjectOfEmail = document.getElementById("subject");
+// const subjectOfEmail = document.getElementById("subject");
 // console.log(subjectOfEmail.value)
 
 const checkMark = `<i class="fa-solid fa-check"></i> `;
@@ -28,8 +28,6 @@ selectBtn.forEach( btn => {
         if( e.target.classList.contains("memberInfo-select") ){
             closeMember.click();
         }
-
-
     })
 })
 
