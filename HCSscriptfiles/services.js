@@ -2,85 +2,85 @@ const services = [
     {
         id:"ML",
         name: "Micro Loans",
-        price: "BBD $50.00",
+        priceString: "BBD $50.00",
         photo: "/HubbCentralServices/Photos/ML.jpg"
     },
     {
         id:"RDL",
         name: "Renewal of Driver's License",  
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/RDL.jpg" 
     },
     {
         id:"UVA",
         name:"US Visa Application",
-        price: "BBD $400.00",
+        priceString: "BBD $400.00",
         photo: "Photos/UVA.jpg"
     },
     {
         id:"CETA",
         name:"Canadian ETA",
-        price: "BBD $40.00",
+        priceString: "BBD $40.00",
         photo: "Photos/CETA.jpg"
     },
     {
         id:"UBP",
         name:"Utility Bill Payments",
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/UBP.jpg"
     },
     {
         id:"CV",
         name:"CV / Resume Writing",
-        price: "BBD $50.00",
+        priceString: "BBD $50.00",
         photo: "Photos/CV.jpg"
     },
     {
         id:"TN",
         name: "Tamis Numbers",
-        price: "BBD $50.00",
+        priceString: "BBD $50.00",
         photo: "Photos/TN.jpg"
     },
     {
         id:"LT",
         name: "Land Tax",
-        price: "BBD $20.00",
+        priceString: "BBD $20.00",
         photo: "Photos/LT.jpg"
     },
     {
         id:"IT",
         name:"Income Tax",
-        price: "BBD $50.00",
+        priceString: "BBD $50.00",
         photo: "Photos/IT.jpg"
     },
     {
         id:"PCOC",
         name:"Police Certificate of Character",
-        price: "BBD $50.00",
+        priceString: "BBD $50.00",
         photo: "Photos/PCOC.jpg"
     },
     {
         id:"PIT",
         name:"Prison Inmate Top-Ups",
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/usvisa.jpg"
     },
     {
         id:"EALI",
         name:"Employment Agency Local & International",
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/usvisa.jpg"
     },
     {
         id:"IL",
         name:"Invitation Letters",
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/usvisa.jpg"
     },
     {
         id:"DP",
         name:"Document Preparations",
-        price: "Price varies",
+        priceString: "Price varies",
         photo: "Photos/usvisa.jpg"
     },
 
@@ -95,6 +95,7 @@ const serviceHeadingPrice = document.querySelector(".servicesPrice");
 
 const servicesContainer = document.querySelector(".services-container");
 
+
 let index = 0;
 
 
@@ -107,10 +108,9 @@ setInterval(()=>{
     }
     serviceHeadingTitleContainer.style.backgroundImage = `url(${services[index].photo})`;
     serviceHeadingTitle.innerHTML = `${services[index].name}`;
-    serviceHeadingPrice.innerHTML = `${services[index].price}`;
-
-    
+    serviceHeadingPrice.innerHTML = `${services[index].priceString}`;    
 },3000);
+
 
 servicesBtns.forEach(btn => {
     btn.addEventListener("click", ()=>{
@@ -128,7 +128,7 @@ servicesBtns.forEach(btn => {
 
         serviceHeadingTitleContainer.style.backgroundImage = `url(${services[index].photo})`;
         serviceHeadingTitle.innerHTML = `${services[index].name}`;
-        serviceHeadingPrice.innerHTML = `${services[index].price}`;
+        serviceHeadingPrice.innerHTML = `${services[index].priceString}`;
     })
 })
 
@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     </div>
     <div class="servicesPrice-container">
         <h2 class="servicesPrice">
-            ${e.price}
+            ${e.priceString}
         </h2>
     </div>
     <div class="servicesPayButton-container">
@@ -169,7 +169,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     serviceHeadingTitleContainer.style.backgroundImage = `url(${services[0].photo})`;
     serviceHeadingTitle.innerHTML = `${services[0].name}`;
-    serviceHeadingPrice.innerHTML = `${services[0].price}`;
+    serviceHeadingPrice.innerHTML = `${services[0].priceString}`;
+
+    const payServices = document.querySelectorAll(".pay");
+
+    const online = document.querySelector(".online");
+
 });
 
 

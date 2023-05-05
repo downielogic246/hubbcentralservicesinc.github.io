@@ -109,74 +109,69 @@ function displayApplicationForm(){
 
 const careerContainer = document.querySelector(".jobDesc");
 
-    const  closeApplicationForm = document.querySelector(".closeApplicationForm")
+const  closeApplicationForm = document.querySelector(".closeApplicationForm");
+const btns = document.querySelectorAll(".btn");
+const jobContainer = document.querySelector(".job-listingContainer");
+const filterBtn = document.querySelector(".filterBtn");
+const filterClose = document.querySelector(".filterClose");
+const filterContent = document.querySelector(".btnContainer");
+const applyBtn = document.querySelector(".applyNow");
+const applyForm = document.querySelector(".applyForm");
+const closeApply = document.querySelector(".closeApply");
 
-    const btns = document.querySelectorAll(".btn");
-
-    const jobContainer = document.querySelector(".job-listingContainer");
-
-    const filterBtn = document.querySelector(".filterBtn");
-
-    const filterClose = document.querySelector(".filterClose");
-
-    const filterContent = document.querySelector(".btnContainer");
-
-    const applyBtn = document.querySelector(".applyNow");
-
-    const applyForm = document.querySelector(".applyForm");
-
-    const closeApply = document.querySelector(".closeApply");
+btns.forEach( btn => {
+    btn.addEventListener("click", ()=>{
+        let available = false;
     
-    btns.forEach( btn => {
-        btn.addEventListener("click", ()=>{
-            let available = false;
-    
-            jobContainer.innerHTML = ``;
-            const filter = btn.dataset.industry;
-            for( let i = 0; i < vacancies.length ; i++){
-                let vacancy = vacancies[i].category;
-                if ( filter === vacancy ){
-                    available = true;
-                    loadAll(i);
-                }
+        jobContainer.innerHTML = ``;
+        const filter = btn.dataset.industry;
+        for( let i = 0; i < vacancies.length ; i++){
+            let vacancy = vacancies[i].category;
+            if ( filter === vacancy ){
+                available = true;
+                loadAll(i);
             }
+        }
     
-            if ( available == false && filter !== "all"){
-                jobContainer.innerHTML = `<article class="availability">
+        if ( available == false && filter !== "all"){
+            jobContainer.innerHTML = `<article class="availability">
                 No jobs are currently available for this industry.
                 </article>` 
-            }
+        }
     
-            if ( available == false && filter === "all"){
-                for(let i = 0; i < vacancies.length; i++){
+        if ( available == false && filter === "all"){
+            for(let i = 0; i < vacancies.length; i++){
     
-                    loadAll(i);
-                }
+                loadAll(i);
             }
-            displayApplicationForm();
-        })
-    });
-
-    applyBtn.addEventListener("click", ()=>{
-        applyForm.style.display = "flex";
+        }
+        displayApplicationForm();
     })
+});
 
-    closeApply.addEventListener("click", ()=>{
-        applyForm.style.display = "none";
-    })
+applyBtn.addEventListener("click", ()=>{
+    applyForm.style.display = "flex";
+})
 
-    closeApplicationForm.addEventListener("click", ()=>{
-        careerContainer.style.top = "-120%";
-    })
+closeApply.addEventListener("click", ()=>{
+    applyForm.style.display = "none";
+})
+
+closeApplicationForm.addEventListener("click", ()=>{
+    careerContainer.style.top = "-120%";
+})
+
 filterBtn.addEventListener("click", () => {
-        filterContent.style.display = "flex";
-        filterContent.style.top = "20vh";
-    })
+    filterContent.style.display = "flex";
+    filterContent.style.top = "20vh";
+})
 
 filterClose.addEventListener("click", () => {
     filterContent.style.display = "none";
     filterContent.style.top = "-120%";
 })
+
+
 window.addEventListener("DOMContentLoaded",() =>{
     
     // console.log(career.childNodes[3].innerHTML)

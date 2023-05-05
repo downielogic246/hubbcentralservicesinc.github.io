@@ -4,15 +4,17 @@ const slides = [
         quote: "click here to see any jobs currently available internationally & regionally",
         photo: "Photos/jobs_large.jpg",
         link: `<i class="fa-sharp fa-solid fa-link"></i>
-        jobs`
+        jobs`,
+        address: "jobs.html"
     }
     ,
     {
         title: "utility bill due?",
-        quote: "click here",
+        quote: "click here to see all services provided",
         photo:"Photos/services_large.jpg",
         link: `<i class="fa-sharp fa-solid fa-link"></i>
-        services`
+        services`,
+        address: "services.html",
     }    
 ];
 
@@ -30,11 +32,15 @@ setInterval(() => {
     slideshow.style.backgroundImage = "url(" + slides[i].photo + ")";
     mainTitle.innerHTML = slides[i].title;
     mainLink.innerHTML = slides[i].link;
+    mainLink.href = slides[i].address;
     mainRedirect.innerHTML = slides[i].quote;
+
 
     console.log("changed.");
     i++;
     if ( i == 2 ){
         i = 0;
     }    
+
+
 }, 5000);
