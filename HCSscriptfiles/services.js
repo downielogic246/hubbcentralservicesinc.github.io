@@ -287,7 +287,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
                             backToPay.classList.remove('no-show')
                            onlinePaymentMethod.href = e.link 
                         }
-                        
                     }
                 })
 
