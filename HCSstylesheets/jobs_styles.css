@@ -144,6 +144,7 @@
     display: none;
     color: rgba(255, 0, 0, 0.555);
     font-size: 1.5rem;
+    border: 0;
 }
 
 .filterClose{

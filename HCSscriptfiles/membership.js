@@ -8,6 +8,12 @@ const small_services = [
     "Free CV Revamp"
 ]
 
+const membershipLinks = [ 
+    "",
+    "",
+    "",
+]
+
 
 const selectBtn = document.querySelectorAll(".selectBtn");
 const smallBtn = document.querySelectorAll(".small");
