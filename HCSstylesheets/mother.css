@@ -132,11 +132,66 @@
                 }
         }
 
+        @media (width: 912px) and (height: 1368px) {
+            .mothersDay-backGround {
+                    width: 55%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+        }
+
+        @media (max-width:540px) {
+            .mothersDay-backGround {
+                    width: 50%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+        }
+
         @media (max-width:425px) {
             [class*="-article"] {
                     width: 100%;
                     font-size: 1.5rem;
                     padding: 10px;
-                }
+            }
+            
+            #mothersDay {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                z-index: 99999999999999999999;
+                background-color: #845654;
+            }
+            
+            .mothersDay-backGround {
+                width: 70%;
+                height: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
+        
+        @media (max-width:375px) {
+                    [class*="-article"] {
+                        width: 100%;
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+        
+                    #mothersDay {
+                        position: fixed;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 99999999999999999999;
+                        background-color: #845654;
+                    }
+                }
 }
