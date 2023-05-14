@@ -143,19 +143,21 @@
 
         @media (max-width:540px) {
             .mothersDay-backGround {
-                    width: 50%;
-                    height: 50%;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
+                width: 50%;
+                height: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            [class*="-article"] {
+                width: 100%;
+                font-size: 1.25rem;
+                padding: 10px;
+            }
         }
 
         @media (max-width:425px) {
-            [class*="-article"] {
-                    width: 100%;
-                    font-size: 1.5rem;
-                    padding: 10px;
-            }
+            
             
             #mothersDay {
                 position: fixed;
