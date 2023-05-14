@@ -1,0 +1,142 @@
+#mothersDay{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999999999;
+    background-color: #845654;
+}
+
+.mothersDay-backGround{
+    background-image: url(../Photos/mothersDay_1.jpeg);
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[class*="-article"]{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 30px;
+    font-family: 'Gabriola';
+    font-weight: bold;
+}
+
+.mothersDayClose{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: max-content;
+    height: max-content;
+    font-size: 2rem;
+    background: none;
+    border: 0;
+    color: white;
+}
+
+.mothersDayClose:hover{
+    color: black;
+    cursor: pointer;
+}
+
+@media (orientation: landscape){
+    @media (max-width: 1624px){
+        [class*="-article"] {
+            font-size: 2rem;
+            width: 20%;
+        }
+        
+        .mothersDay-backGround {
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media (max-width: 1184px) {
+        [class*="-article"] {
+                font-size: 1.5rem;
+        }
+
+        .mothersDay-backGround {
+                width: 60%;
+                background-size: cover;
+                background-repeat: no-repeat;
+        }
+    }
+
+    @media (max-width: 918px) {
+        [class*="-article"] {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .mothersDay-backGround {
+                width: 60%;
+                background-size: cover;
+                background-repeat: no-repeat;
+        }
+    }
+    @media (max-width: 860px) {
+        #mothersDay{
+            flex-direction: column;
+        }
+
+        [class*="-article"] {
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .mothersDay-backGround {
+                width: 30%;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    #mothersDay {
+            flex-direction: column;
+        }
+    
+        [class*="-article"] {
+            width: 80%;
+            font-size: 2rem;
+            padding: 10px;
+        }
+    
+        .mothersDay-backGround {
+            width: 70%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 1178px) {
+            .mothersDay-backGround {
+                    width: 70%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+        }
+
+        @media (max-width:425px) {
+            [class*="-article"] {
+                    width: 100%;
+                    font-size: 1.5rem;
+                    padding: 10px;
+                }
+        }
+}
