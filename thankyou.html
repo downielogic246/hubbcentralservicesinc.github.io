@@ -1,116 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,
-    , initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css">
-    <link rel="hubcentralservicesinc icon" type="x-icon" href="Photos/Hubb Central Services Inc_200.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css" />
+    <link
+      rel="hubcentralservicesinc icon"
+      type="x-icon"
+      href="Photos/Hubb Central Services Inc_200.png"
+    />
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(https://raw.githubusercontent.com/mardanca/hubbcentralservicesinc.github.io/main/Photos/thanks.jpg);
+        background-size: cover;
+        color: white;
+      }
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-image: url(/Photos/thanks.jpg);
-            background-size: cover;
-            color: white;
-        }
+      .thanks_container {
+        background-color: #050505e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
 
-        .thanks_container{
-            background-color: #050505e5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-        }
+      .thanks {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
-        .thanks{
-            width: max-content;
-            height: max-content;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+      .thanksTitle {
+        font-size: 7rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        text-transform: capitalize;
+      }
 
-        .thanksTitle{
-            font-size: 7rem;
-            letter-spacing: 2px;
-            word-spacing: 5px;
-            text-transform: capitalize;
-        }
+      article {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1.5rem;
+        column-gap: 20px;
+      }
 
-        article{
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            font-size: 1.5rem;
-            column-gap: 20px;
-        }
+      article > a {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+        font-size: 2.25rem;
+      }
 
-        article > a{
-            text-transform: capitalize;
-            text-decoration: none;
-            color: white;
-            font-size: 2.25rem;
-        }
+      .returnBtnContainer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        font-size: 2rem;
+      }
 
-        .returnBtnContainer{
-            position: absolute;
-            top:0;
-            right: 0;
-            padding: 20px;
-            font-size: 2rem;
-        }
-
-        .returnBtnContainer > a{
-            color:  #1f4454
-        }
+      .returnBtnContainer > a {
+        color: #1f4454;
+      }
     </style>
 
     <title>Thank You!</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="thanks_container">
-        <div class="thanks">
-            <marquee direction="left" >
-            
-                <h1 class="thanksTitle">
-                    thank you!!
-                </h1>
-                <article>
-                    <h2>
-                        Feels free to visit our socials at:
-                    </h2>
-                    <a href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        facebook: Recruiting Hubb
-                    </a>
-                    <a href="https://www.instagram.com/recruitinghubb/?igshid=YmMyMTA2M2Y%3D">
-                        <i class="fa-brands fa-square-instagram"></i>
-                        instagram :   <span style="text-transform: lowercase;"> recruitinghubb </span>
-                    </a>
-                    <a href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237"><i class="fa-brands fa-tiktok"></i>
-                        tiktok
-                    </a>
-                </article>
-            </marquee>
-                
-        </div>
+      <div class="thanks">
+        <marquee direction="left">
+          <h1 class="thanksTitle">thank you!!</h1>
+          <article>
+            <h2>Feels free to visit our socials at:</h2>
+            <a
+              href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+              facebook: Recruiting Hubb
+            </a>
+            <a
+              href="https://www.instagram.com/recruitinghubb/?igshid=YmMyMTA2M2Y%3D"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+              instagram :
+              <span style="text-transform: lowercase"> recruitinghubb </span>
+            </a>
+            <a
+              href="https://www.facebook.com/people/Recruiting-Hubb/100087263902237"
+              ><i class="fa-brands fa-tiktok"></i>
+              tiktok
+            </a>
+          </article>
+        </marquee>
+      </div>
 
-        <div class="returnBtnContainer">
-            <a href="index.html">Return Home</a>
-        </div>
-
+      <div class="returnBtnContainer">
+        <a href="index.html">Return Home</a>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
