@@ -255,26 +255,44 @@
 .applyForm{
     color: var(--mainColour-color);
     position: fixed;
+    left: 20%;
+    right: 20%;
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 99999999999;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-color: transparent;
 }
 
 .apply-container{
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-areas: 'name name'
+            'nrn nrn'
+            'pcoc pcoc'
+            'age dob'
+            'gender status'
+            'tamis nis'
+            'address address'
+            'phone email'
+            'dependents religion'
+            'submit submit'
+            'back back';
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: var(--footerColour-background-colour);
     border: 1px solid black;
-    width: 300px;
-    height: 600px;
+    width: max-content;
+    height: max-content;
 }
 
 .closeApply{
+    justify-self: start;
+    grid-area: back;
     background: none;
     border: 0;
     color: var(--mainColour-color);
@@ -282,13 +300,12 @@
 }
 
 [class*="apply-"]{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
+    justify-self: center;
+    width: 100%;
+} 
 
 [id*="a-"]{
-    height: 40px;
+    height: 30px;
     width: 100%;
 }
 
@@ -296,9 +313,78 @@
     font-size: 1.75rem;
 }
 
+span {
+    width: max-content;
+}
+
+
 .apply-submit{
+    grid-area: submit;
     width:max-content;
 }
+
+.apply-name{
+    grid-area: name;
+    width: 75%;
+}
+
+.apply-age{
+    grid-area: age;
+    width: 50%;
+}
+
+.apply-dob{
+    grid-area: dob;
+    width: 50%;
+}
+
+.apply-nrn{
+    grid-area: nrn;
+    width: 75%;
+}
+
+.apply-tamis{
+    grid-area: tamis;width: 50%;
+}
+
+.apply-nis{
+    grid-area: nis;width: 50%;
+}
+
+.apply-dependents{
+    grid-area: dependents;width: 50%;
+}
+.apply-religion{
+    grid-area: religion;width: 50%;
+}
+.apply-email{
+    grid-area: email;width: 50%;
+}
+.apply-phone{
+    grid-area: phone;width: 50%;
+}
+.apply-address{
+    grid-area: address;width: 75%;
+}
+
+.apply-pcoc, .apply-gender, .apply-status{
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-pcoc{
+    grid-area: pcoc;width: 75%;
+}
+
+.apply-gender{
+    grid-area: gender;width: 50%;
+}
+
+.apply-status{
+    grid-area: status;width: 50%;
+}
+
+
 
 #aSubmit{
     padding: 5px 20px;
