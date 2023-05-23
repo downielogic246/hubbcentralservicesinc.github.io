@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Hubb\ Reports/Photos/report_bkgd.jpg);
+    background-size: cover;
+}
+
+#my_pdf_viewer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    box-shadow: 1px 1px 10px black;
+}
+
+#pdf_renderer{
+    /*width:100%;*/
+    height: 80vh;
+}
+.controls {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 1px 1px 10px black;
+    border: 1px outset rgb(27, 27, 27);
+    height: max-content;
+}
+
+#canvas_container {
+    width: auto;
+    height: 100%;
+    overflow: auto;
+    background: #333;
+    text-align: center;
+    border: 1px outset rgb(27, 27, 27);
+    height: max-content;
+}
+
+#navigation_controls {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous,
+.current,
+.next {
+    width: 100%;
+    text-align: center;
+}
+
+#go_previous,
+#current_page,
+#go_next {
+    background: rgb(124, 205, 207);
+    border-color: rgb(27, 27, 27);
+    color: rgb(27, 27, 27);
+    border-radius: 10px;
+    border-style: double;
+    padding: 10px;
+}
+
+#current_page {
+    font-weight: bold;
+}
+
+[id*="go_"] {
+    border-radius: 100%; 
+    width: max-content;
+}
+
+#zoom_controls {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+[id*="zoom_"] {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgb(124, 205, 207);
+}
+
+[id*="zoom_"]:hover {
+    font-size: 1.75rem;
+}
+
+.dropdown {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background: #333;
+    border: 1px outset rgb(27, 27, 27);
+}
+
+.dropdown-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.dropdown-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+}
+
+.dropdown-item {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+    color: rgb(214, 214, 214);
+}
+
+.dropdown-menu li:hover .month-list {
+    display: block;
+}
+
+.month-list {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 200px;
+    height: max-content;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.month {
+    width: 100%;
+    height: max-content;
+}
+
+.btn-month {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-month:hover {
+    position: relative;
+
+    background-color: rgba(202, 202, 202, 0.671);
+}
+
+.showYear,
+.closeYear{
+    display: none;
+}
+
+@media (orientation: portrait) {
+    @media (max-width: 960px) {
+        #my_pdf_viewer{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .dropdown-heading {
+            padding: 10px;
+                    font-size: 1.5rem;
+                }
+
+                .dropdown-item{
+                    font-size: 1.5rem;
+                }
+    }
+
+    @media (max-width: 428px) {
+        #pdf_renderer {
+                width:100%;
+                /* height: 80vh; */
+        }
+
+        .showYear{
+            position: relative;
+            top: 30%;
+            right: 7%;
+            display: block;
+            height: max-content;
+            width: max-content;
+            font-size: 2rem;
+            background: none;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .dropdown{
+            justify-content: space-between;
+        }
+
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            background-color: #333;
+            top: 0;
+        }
+
+        .dropdown-item {
+                    padding: 20px;
+                    font-size: 1.25rem;
+                }
+
+        .month-list{
+            top: 5%;
+            right: 0;
+        }
+
+        .btn-month{
+            font-size: 1.25rem;
+            padding: 10px;
+        }
+                
+        .dropdown-heading {
+            padding: 10px;
+            font-size: 2.5rem;
+            visibility: hidden;
+        }
+
+        .closeYear{
+            display: block;
+            position: absolute;
+            font-size: 2rem;
+            top: 2%;
+            left: 5%;
+            background: none;
+            border: 0;
+            color: red;
+        }
+    }
+
+    @media (max-width: 415px){
+        #pdf_renderer{
+            width: 500px;
+            height: auto;
+        }
+
+        #current_page{
+            width:70%;
+        }
+    }
+}
+
+.no-display {
+    display: none;
+}
