@@ -39,7 +39,7 @@
       ];
 
       const date = new Date();
-      let pathName = "./pdf_reports/";
+      let pathName = "Hubb Reports/pdf_reports/";
 
       //console.log(date.getMonth(), date.getFullYear())
 
