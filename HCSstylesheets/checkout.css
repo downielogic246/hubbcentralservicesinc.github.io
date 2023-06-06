@@ -1,4 +1,4 @@
-.checkoutContainer{
+.appointment-container{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
     z-index: 9999999;
 }
 
-.checkout{
+.appointment{
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     padding: 20px 0px;
 }
 
-.checkoutTitle{
+.appointment-title{
     position: relative;;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
     font-size: 4rem;
 }
 
-.checkoutInfo {
+/* .checkoutInfo {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -72,14 +72,14 @@
     text-align: center;
     width: 50%;
     font-family: 'Times New Roman', Times, serif;
-}
-
+} */
+/* 
 .online:hover, .f2f:hover{
     background-color: var(--footerColour-background-colour);
     color: var(--mainColour-color);
-}
+} */
 
-.f2f-container{
+.book-container{
     position: relative;
     display: grid;
     grid-template-areas: 'name contact email'
@@ -100,6 +100,7 @@
     align-items: center;
     font-size: 3rem;
 }
+
 
 [id*="c"]{
     width: 90%;
@@ -134,7 +135,7 @@
     font-size: 3rem;
 }
 
-.checkoutCloseContainer{
+.appointment-close{
     width: 100%;
 }
 
@@ -173,7 +174,7 @@
     text-decoration: underline;
 }
 
-.f2fMethod{
+.book-appointment{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
@@ -202,7 +203,7 @@
     } */
 
     @media (max-width: 1688px){
-        .f2f-container{
+        .book-container{
             display: grid;
             grid-template-areas: 'name contact'
             'email email'
@@ -232,7 +233,7 @@
             height: 850px;
         } */
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 3rem;
         }
         .clientDate{
@@ -272,13 +273,13 @@
             height: 750px;
         }
          */
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2.75rem;
         }
         
-        .online, .f2f{
+        /* .online, .f2f{
             font-size: 2rem;
-        }
+        } */
     }
     @media (max-width: 940px){
         
@@ -287,13 +288,13 @@
             height: 650px;
         } */
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2rem;
         }
-        
+/*         
         .online, .f2f{
             font-size: 1.75rem;
-        }
+        } */
         /* .checkout{
             width: 500px;
             height: 650px;
@@ -308,13 +309,13 @@
         }
 
 
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2rem;
         }
-        
+/*         
         .online, .f2f{
             font-size: 1.75rem;
-        }
+        } */
 
         #submitClient{
             width: 50%;
@@ -322,7 +323,7 @@
             font-weight: bold;
         }
         
-        .f2f-container{
+        .book-container{
             display: grid;
             grid-template-areas: 'name '
             'contact'
@@ -344,14 +345,14 @@
     @media (max-width: 731px){
         
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 1.5rem;
         }
         
-        .online, .f2f{
+        /* .online, .f2f{
             font-size: 1rem;
             padding: 5px;
-        }
+        } */
         .goBack{
             font-size: 1rem;
         }
@@ -366,7 +367,7 @@
             font-weight: bold;
         }
 
-        .f2f-container{
+        .book-container{
             row-gap: 10px;
         }
     }
@@ -383,7 +384,7 @@
             font-weight: bold;
         }
 
-        .f2f-container{
+        .book-container{
             row-gap: 0px;
         }
 
@@ -393,7 +394,7 @@
     }
     @media (max-width: 500px){
         
-        .checkout{
+        .appointment{
             width: 100%;
             height: 100% !important;
         }
@@ -402,7 +403,7 @@
 
 @media (orientation: portrait){
     
-    .f2f-container{
+    .book-container{
         display: grid;
         grid-template-areas: 'name contact'
         'email email'
@@ -426,12 +427,12 @@
 
     @media (max-width: 1440px){
         
-        /* .checkout{
+        /* .appointment{
             width: 700px;
             height: 850px;
         } */
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 3rem;
         }
         .clientDate{
@@ -466,12 +467,12 @@
     }
     @media (max-width: 1100px){
         
-        /* .checkout{
+        /* .appointment{
             width: 600px;
             height: 750px;
         }
          */
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2.75rem;
         }
         
@@ -481,19 +482,19 @@
     }
     @media (max-width: 940px){
         
-        /* .checkout{
+        /* .appointment{
             width: 500px;
             height: 650px;
         } */
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2rem;
         }
         
         .online, .f2f{
             font-size: 1.75rem;
         }
-        /* .checkout{
+        /* .appointment{
             width: 500px;
             height: 650px;
         } */
@@ -507,7 +508,7 @@
         }
 
 
-        .checkoutTitle{
+        .appointment-title{
             font-size: 2rem;
         }
         
@@ -521,7 +522,7 @@
             font-weight: bold;
         }
         
-        .f2f-container{
+        .book-container{
             display: grid;
             grid-template-areas: 'name '
             'contact'
@@ -543,7 +544,7 @@
     @media (max-width: 731px){
         
         
-        .checkoutTitle{
+        .appointment-title{
             font-size: 1.5rem;
         }
         
@@ -565,7 +566,7 @@
             font-weight: bold;
         }
 
-        .f2f-container{
+        .book-container{
             row-gap: 10px;
         }
     }
@@ -582,7 +583,7 @@
             font-weight: bold;
         }
 
-        .f2f-container{
+        .book-container{
             row-gap: 0px;
         }
 
@@ -592,7 +593,7 @@
     }
     @media (max-width: 500px){
         
-        .checkout{
+        .appointment{
             width: 100%;
             height: 100% !important;
         }

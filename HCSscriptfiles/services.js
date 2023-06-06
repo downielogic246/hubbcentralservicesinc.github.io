@@ -124,7 +124,7 @@ const serviceHeadingPrice = document.querySelector(".servicesPrice");
 const servicesContainer = document.querySelector(".services-container");
 
 
-const slideShowPayBtn = document.querySelector(".servicesPayButton");
+const slideShowAppointmentBtn = document.querySelector(".servicesAppointmentButton");
 
 
 const onlinePaymentMethod = document.querySelector(".online");
@@ -137,72 +137,21 @@ const selectOptions = document.getElementById("servicesList");
 selectOptions.addEventListener("change", ()=>{
     console.log(selectOptions.value)
     
-    window.localStorage.setItem("checkout", true);
-    checkOutContainer.classList.remove("no-show");
-
-    services.forEach( e => {
-    if (e.name == selectOptions.value){
-        if (e.amount == false){
-            onlinePaymentMethod.classList.add('no-show');
-            f2f.click();
-            backToPay.classList.add('no-show')
-        } else {
-            backToPay.click();
-            onlinePaymentMethod.classList.remove('no-show');
-            backToPay.classList.remove('no-show')
-           onlinePaymentMethod.href = e.link 
-        }
-
-    }
-})
+    setCheckout();
+    
+    subject.value = "Appointment to pay " + selectOptions.value;
 })
 
-
-// selectOptions.forEach( opt => {
-// //     opt.addEventListener("click", ()=>{
-//         window.localStorage.setItem("checkout", true);
-//         checkOutContainer.classList.remove("no-show");
-
-//     services.forEach( e => {
-//         if (e.name == opt.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML){
-//             if (e.amount == false){
-//                 onlinePaymentMethod.classList.add('no-show');
-//                 f2f.click();
-//                 backToPay.classList.add('no-show')
-//             } else {
-//                 backToPay.click();
-//                 onlinePaymentMethod.classList.remove('no-show');
-//                 backToPay.classList.remove('no-show')
-//                onlinePaymentMethod.href = e.link 
-//             }
-
-//         }
-//     })
-//     })
-// })
-
-// console.log(slideShowPayBtn)
-
-
-slideShowPayBtn.addEventListener("click", ()=> {
+const setCheckout = () => {    
     window.localStorage.setItem("checkout", true);
-            checkOutContainer.classList.remove("no-show");
+    appointmentContainer.classList.remove("no-show");
+}
 
-    services.forEach( e => {
-        if (e.name == slideShowPayBtn.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML){
-            if (e.amount == false){
-                onlinePaymentMethod.classList.add('no-show');
-                f2f.click();
-                backToPay.classList.add('no-show')
-            } else {
-                backToPay.click();
-                onlinePaymentMethod.classList.remove('no-show');
-                backToPay.classList.remove('no-show')
-               onlinePaymentMethod.href = e.link 
-            }
 
-        }
-    })
+
+slideShowAppointmentBtn.addEventListener("click", ()=> {
+    setCheckout();
+    subject.value = "Appointment to pay " + slideShowAppointmentBtn.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML;
 })
 
 let index = 0;
@@ -241,23 +190,20 @@ servicesBtns.forEach(btn => {
     })
 })
 
-// console.log(services.length);
 
 window.addEventListener("DOMContentLoaded", ()=>{
     services.forEach((e)=>{servicesContainer.innerHTML += ` <div class="service" id="${e.id}">
     <div class="servicesTitle-container">
-        <h1 class="servicesTitle">
-            ${e.name}
-        </h1>
+        <h1 class="servicesTitle">${e.name}</h1>
     </div>
     <div class="servicesPrice-container">
         <h2 class="servicesPrice">
             ${e.priceString}
         </h2>
     </div>
-    <div class="servicesPayButton-container">
-        <button class="servicesPayButton pay">
-            pay now
+    <div class="servicesAppointmentButton-container">
+        <button class="servicesAppointmentButton book">
+            BOOK APPOINTMENT
         </button>
     </div>`;
 
@@ -267,41 +213,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     item.style.backgroundSize = "cover"});
     
-    const payBtn = document.querySelectorAll(".pay");
+    const bookBtn = document.querySelectorAll(".book");
 
-    const f2f = document.querySelector(".f2f");
-    payBtn.forEach( btn => {
-        btn.addEventListener("click", ()=>{
-            window.localStorage.setItem("checkout", true);
-            checkOutContainer.classList.remove("no-show");
-
-            services.forEach( e => {
-                    if (btn.parentNode.parentElement.id == e.id){
-                        if (e.amount == false){
-                            onlinePaymentMethod.classList.add('no-show');
-                            f2f.click();
-                            backToPay.classList.add('no-show')
-                        } else {
-                            backToPay.click();
-                            onlinePaymentMethod.classList.remove('no-show');
-                            backToPay.classList.remove('no-show')
-                           onlinePaymentMethod.href = e.link 
-                        }
-                    }
-                })
-
-            // if (btn.parentNode.parentNode.childNodes[3].childNodes[1].innerHTML === "Price varies"){
-            //     onlinePaymentMethod.classList.add('no-show');
-            // } else {
-                
-            // }
-            
-            // if (btn.id == "inHeadingPayButton"){
-
-            //     const choosenService = serviceHeadingTitle.innerHTML;
-
-                
-            // }
+    bookBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            setCheckout();
+            subject.value = "Appointment to pay " + btn.parentNode.parentNode.childNodes[1].childNodes[1].innerHTML;
         })
     })
 
@@ -309,9 +226,4 @@ window.addEventListener("DOMContentLoaded", ()=>{
     serviceHeadingTitle.innerHTML = `${services[0].name}`;
     serviceHeadingPrice.innerHTML = `${services[0].priceString}`;
 
-    const payServices = document.querySelectorAll(".pay");
-
 });
-
-
-

@@ -13,33 +13,19 @@
 </head>
 <body>
     <!-- check out -->
-    <div class="checkoutContainer no-show">
-        <div class="checkout">
-            <div class="checkoutCloseContainer">
-
+    <div class="appointment-container no-show">
+        <div class="appointment">
+            <div class="appointment-close">
                 <button class="close">
                     Close
                 </button>
             </div>
-            <h1 class="checkoutTitle">
+            <h1 class="appointment-title">
+                book an appointment
             </h1>
-            
-            <div class="checkoutInfo">
-                <div class="applyBtns">
-                    <a class="online" href="#" target="_blank">
-                        online
-                    </a>
-                    <button class="f2f">
-                        In person
-                    </button>
-                </div>
-
-                <div class="f2fMethod no-show">
-                    <button class="goBack">
-                        <i class="fa-sharp fa-solid fa-arrow-left"></i>  Back To Pay Method
-                    </button>
-                    <form action="" method="post" class="f2f-container">
-                        <input type="hidden" name="_template" value="table">
+                <div class="book-appointment">
+                    <form action="https://formspree.io/f/meqwkjrb" method="post" class="book-container">
+                       
                         <div class="clientName">
                             <label for="cName">Name</label>
                             <input type="name" name="cName" id="cName">
@@ -57,15 +43,7 @@
                             <input type="email" name="cEmail" id="cEmail">
                         </div>
                         
-                        <input type="hidden" name="_subject" value="Appointment to pay">
-
-                        <!-- !!!!!!!!!!!!!!!!!!!! -->
-                        <input type="hidden" name="_next" value="https://mardanca.github.io/hubbcentralservicesinc.github.io/thankyou.html">
-                        
-                        <input type="hidden" name="_cc" value="info@hubbteam.com">
-
-                        <input type="hidden" name="_autoresponse" value="Hey there, your appointment has be submitted. If there are any challenges, we will contact you directly via phonecall. HAVE A GOOD DAY!!!">
-
+                        <input type="hidden" id="_subject" name="_subject" value="">
                         <div class="submit">
                             <button type="submit" id="submitClient">Submit</button>
                         </div>
@@ -98,11 +76,11 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                         </div>
-                        <div class="serviceHeadingPayButton-container">
+                        <div class="serviceHeadingAppointmentButton-container">
                             <h2 class="servicesPrice">
                             </h2>
-                            <button id="inHeadingPayButton" class="servicesPayButton" >
-                                Pay Now
+                            <button id="inHeadingAppointmentButton" class="servicesAppointmentButton" >
+                                BOOK NOW
                             </button>
                         </div>
                     </div>

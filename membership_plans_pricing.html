@@ -16,74 +16,45 @@
     <title>Membership Plans & Pricing | Hubb Central Services</title>
   </head>
   <body>
-    <div class="checkoutContainer no-show">
-      <div class="checkout">
-        <div class="checkoutCloseContainer">
-          <button class="close">Close</button>
+    <div class="appointment-container no-show">
+        <div class="appointment">
+            <div class="appointment-close">
+                <button class="close">
+                    Close
+                </button>
+            </div>
+            <h1 class="appointment-title">
+                book an appointment
+            </h1>
+                <div class="book-appointment">
+                    <form action="https://formspree.io/f/meqwkjrb" method="post" class="book-container">
+                       
+                        <div class="clientName">
+                            <label for="cName">Name</label>
+                            <input type="name" name="cName" id="cName">
+                        </div>
+                        <div class="clientDate">
+                            <label for="day">Date & Time</label>
+                            <input type="datetime-local" name="day" id="day" id="cDate">
+                        </div>
+                        <div class="clientPhone">
+                            <label for="cPhone">Phone Number</label>
+                            <input type="tel" name="cPhone" id="cPhone">
+                        </div>
+                        <div class="clientEmail">
+                            <label for="cEmail">Email</label>
+                            <input type="email" name="cEmail" id="cEmail">
+                        </div>
+                        
+                        <input type="hidden" id="_subject" name="_subject" value="">
+                        <div class="submit">
+                            <button type="submit" id="submitClient">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
         </div>
-        <h1 class="checkoutTitle"></h1>
-
-        <div class="checkoutInfo">
-          <div class="applyBtns">
-            <a class="online" href="#" target="_blank"> online </a>
-            <button class="f2f">In person</button>
-          </div>
-
-          <div class="f2fMethod no-show">
-            <button class="goBack">
-              <i class="fa-sharp fa-solid fa-arrow-left"></i> Back To Pay Method
-            </button>
-            <form
-              action="https://formsubmit.co/hubbcentralservices.info@gmail.com"
-              method="post"
-              class="f2f-container"
-            >
-              <input type="hidden" name="_template" value="table" />
-              <div class="clientName">
-                <label for="cName">Name</label>
-                <input type="name" name="cName" id="cName" />
-              </div>
-              <div class="clientDate">
-                <label for="day">Date & Time (EST)</label>
-                <input type="datetime-local" name="day" id="day" id="cDate" />
-              </div>
-              <div class="clientPhone">
-                <label for="cPhone">Phone Number</label>
-                <input type="tel" name="cPhone" id="cPhone" />
-              </div>
-              <div class="clientEmail">
-                <label for="cEmail">Email</label>
-                <input type="email" name="cEmail" id="cEmail" />
-              </div>
-
-              <!-- !!!!!!!!!!!!!!!!!!!! -->
-              <!-- <input
-                type="hidden"
-                name="_next"
-                value="https://mardanca.github.io/hubbcentralservicesinc.github.io/thankyou.html"
-              /> -->
-
-              <input
-                id="subject"
-                type="hidden"
-                name="_subject"
-                value="Membership Payment"
-              />
-              <input type="hidden" name="_cc" value="info@hubbteam.com" />
-
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Hey there, your appointment has be submitted. If there are any challenges, we will contact you directly via phonecall or email. HAVE A GOOD DAY!!!"
-              />
-
-              <div class="submit">
-                <button type="submit" id="submitClient">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
     <section class="main-area">
       <div class="mainContent">
@@ -254,7 +225,7 @@
             <i class="fa-solid fa-circle-xmark"></i>
           </button>
           <div class="memberInfo-titleContainer">
-            <h1 class="memberInfo-title">hello</h1>
+            <h1 class="memberInfo-title"></h1>
           </div>
           <div class="memberInfo-servicesContainer">
             <article class="memberInfo-brief">
