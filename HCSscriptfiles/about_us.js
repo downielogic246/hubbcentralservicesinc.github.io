@@ -3,17 +3,17 @@ const about = [
         id: "history",
         section: "first",
         heading: "who we are",
-        desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, sed. 
+        desc: `Success is our destination.  
         <br>`,
-        photo: `<img src="/HubbCentralServices/Photos/member_small.jpg" alt="Hubb Central Services Staff">`
+        photo: `<img class="img-about" src="Photos/HCS_building.jpeg" alt="Hubb Central Services Staff">`
     },
     {
         id: "staff",
         section: "second",
         heading: "this is us",
-        desc: `Lorem ipsum dolor, sit amet consecttur adipisicing elit. Est, sed.
+        desc: `This is our staff.
         <br>`,
-        photo:`<img src="/HubbCentralServices/Photos/about_small.jpg" alt="Hubb Central Services Staff">`
+        photo:`<img class="img-about" src="Photos/staff_smaller.jpeg" alt="Hubb Central Services Staff">`
     }
 ]
 

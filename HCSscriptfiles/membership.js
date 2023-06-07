@@ -24,21 +24,12 @@ selectBtn.forEach( btn => {
         window.localStorage.setItem("checkout", true);
         appointmentContainer.classList.remove("no-show");
 
-        subject.value = btn.parentNode.childNodes[1].innerHTML + "membership payment"
-
-        // if (btn.parentNode.classList.contains("platinum")){
-        //     payOnline.href = platLink;
-        // } else if (btn.parentNode.classList.contains("silver")){
-        //     payOnline.href = silverLink;
-        // } else if (btn.parentNode.classList.contains("gold")){
-        //     payOnline.href = goldLink;
-        // } else if (btn.parentNode.classList.contains("bronze")){
-        //     payOnline.href = bronzeLink;
-        // };
+        if ( !btn.classList.contains('memberInfo-select') ) subject.value = btn.parentNode.childNodes[1].innerHTML + " membership payment"
 
         if( e.target.classList.contains("memberInfo-select") ){
             closeMember.click();
         }
+
     })
 })
 
@@ -76,8 +67,10 @@ smallBtn.forEach( btn => {
 
         memberTitle.innerHTML = btn.childNodes[1].innerHTML;
         
+        console.log(memberTitle.innerHTML)
+        subject.value = btn.childNodes[1].innerHTML + " membership payment"
 
-        subject.value = btn.childNodes[1].innerHTML + "membership payment"
+        console.log(subject.value)
 
     })
 })

@@ -51,15 +51,12 @@
             <div class="contactask">
               <h1 class="contactask-title">ask us anything</h1>
               <div class="form-container">
-                <form
-                  action="https://formsubmit.co/hubbcentralservices.info@gmail.com"
-                  method="post"
-                >
-                  <input type="hidden" name="_template" value="basic" />
+                <form action="https://formspree.io/f/xwkjdwgw" method="post">
                   <div class="customerInfo">
                     <div class="clientName">
                       <!-- <label for="clientName">Name*</label> -->
                       <input
+                        name="Name"
                         type="name"
                         id="clientName"
                         placeholder="Name"
@@ -70,6 +67,7 @@
                     <div class="clientEmail">
                       <!-- <label for="clientEmail">Email*</label> -->
                       <input
+                        name="Email"
                         type="email"
                         id="clientEmail"
                         placeholder="Email"
@@ -80,6 +78,7 @@
                     <div class="clientPhone">
                       <!-- <label for="clientPhone">Phone*</label> -->
                       <input
+                        name="Phone"
                         type="phone"
                         id="clientPhone"
                         placeholder="Contact Number"
@@ -90,6 +89,7 @@
                     <div class="clientAddress">
                       <!-- <label for="clientAddress">Address*</label> -->
                       <input
+                        name="Address"
                         type="address"
                         id="clientAddress"
                         placeholder="Address"
@@ -111,6 +111,7 @@
                     <div class="clientMessage">
                       <!-- <label for="clientMessage">Message*</label> -->
                       <textarea
+                        name="Query for Customer"
                         type="text"
                         id="clientMessage"
                         cols="30"
@@ -120,20 +121,7 @@
                         required
                       ></textarea>
                     </div>
-
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://mardanca.github.io/hubbcentralservicesinc.github.io/thankyou.html"
-                    />
                   </div>
-                  <input type="hidden" name="_cc" value="info@hubbteam.com" />
-
-                  <input
-                    type="hidden"
-                    name="_autoresponse"
-                    value="Hey there, your appointment has be submitted. If there are any challenges, we will contact you directly via phonecall or email. HAVE A GOOD DAY!!!"
-                  />
                   <button id="submit" type="submit">Submit</button>
                 </form>
               </div>
