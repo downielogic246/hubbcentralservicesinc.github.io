@@ -171,6 +171,7 @@ body {
 }
 
 .btn-month {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background: transparent;

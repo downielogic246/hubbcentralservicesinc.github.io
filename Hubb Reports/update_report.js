@@ -40,7 +40,6 @@
 
       const date = new Date();
       let pathName = "./pdf_reports/";
-
       //console.log(date.getMonth(), date.getFullYear())
 
        function displayReport() {
@@ -57,3 +56,4 @@
 
       export { displayReport };
       export {pathName};
+      export default reports;
