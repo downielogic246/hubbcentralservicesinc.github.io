@@ -2,7 +2,7 @@ const vacancies = [
     {
         name: "Housemen",
         address: "USA",
-        category: "industrial",
+        category: "Hospitality",
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `
         <li>Lorem ipsum dolor sit.</li>
@@ -14,7 +14,7 @@ const vacancies = [
     {
         name: "Housekeeper",
         address: "USA",
-        category: "health",
+        category: "General Worker",
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `                        <li>Lorem ipsum dolor sit.</li>
                         <li>Lorem ipsum dolor sit.</li>
@@ -25,7 +25,7 @@ const vacancies = [
     {
         name: "Laundry Attendant",
         address: "USA",
-        category: "industrial",        
+        category: "General Worker",        
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `
                         <li>Lorem ipsum dolor sit.</li>
@@ -37,7 +37,7 @@ const vacancies = [
     {
         name: "Labourer",
         address: "St. Micheal, Barbados",
-        category: "finance",
+        category: "Construction",
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `
                         <li>Lorem ipsum dolor sit.</li>
@@ -47,9 +47,9 @@ const vacancies = [
                         <li>Lorem ipsum dolor sit.</li>`
     },
     {
-        name: "Housekeepers",
+        name: "Housekeeper",
         address: "St.Lucy, Barbados",
-        category: "fashion",
+        category: "Home Care",
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `
                         <li>Lorem ipsum dolor sit.</li>
@@ -61,7 +61,7 @@ const vacancies = [
     {
         name: "Babysitting",
         address: "Colindale, Egdware, UK",
-        category: "health",
+        category: "Child Care",
         responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
         role: `<li>Lorem ipsum dolor sit.</li>
                         <li>Lorem ipsum dolor sit.</li>

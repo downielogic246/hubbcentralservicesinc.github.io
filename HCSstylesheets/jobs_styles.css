@@ -105,7 +105,7 @@
 .btn{
     padding: 7px 13px;
     height: fit-content;
-    width: fit-content;
+    width: max-content;
     border-radius: 40px;
     font-size: 15px;
     text-transform: capitalize;
