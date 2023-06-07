@@ -124,7 +124,7 @@
 .subContent-staff{
     width: 100%;
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: 27% 27% 27% ;
     gap: 10px;
     grid-template-rows: fit-content;
     justify-content: center;
@@ -148,7 +148,7 @@
 }
 
 .employeeName{
-    padding: 20px;
+    padding: 10px 0px;
     font-size: 2rem;
 }
 
@@ -166,6 +166,13 @@
     padding-top: 5px;
     row-gap: 10px;
     font-size: 1rem;
+}
+
+.employeeNumber{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:  var(--mainColour-color);
+    font-weight: bold;
 }
 
 label{

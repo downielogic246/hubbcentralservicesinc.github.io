@@ -271,7 +271,8 @@
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-areas: 'name name'
+    grid-template-areas:'back back'
+    'name name'
             'nrn nrn'
             'pcoc pcoc'
             'age dob'
@@ -281,7 +282,7 @@
             'phone email'
             'dependents religion'
             'submit submit'
-            'back back';
+            ;
     grid-template-columns: 50% 50%;
     row-gap: 20px;
     justify-content: center;

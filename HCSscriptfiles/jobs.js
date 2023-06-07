@@ -3,71 +3,66 @@ const vacancies = [
         name: "Housemen",
         address: "USA",
         category: "Hospitality",
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
+        responsibility: "Responsible for the overall sanitation and maintenance of the assigned premises.",
         role: `
-        <li>Lorem ipsum dolor sit.</li>
-        <li>Lorem ipsum dolor sit.</li>
-        <li>Lorem ipsum dolor sit.</li>
-        <li>Lorem ipsum dolor sit.</li>
-        <li>Lorem ipsum dolor sit.</li>`
+        <li>Ensuring that grounds and the exterior workspaces are clean</li>
+        <li>Maintaining household appliances and other tools in working order</li>
+        <li>Raking gravel and leaves, jet spraying exterior walls and windowsills and other outdoor furniture</li>
+        <li>Assiting to serve at dinners, looking after swimming pools, gyms and hot tubs</li>
+        <li>Setting furniture and structures for parties and events</li>`
     },
     {
         name: "Housekeeper",
         address: "USA",
-        category: "General Worker",
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
-        role: `                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>`
+        category: "Home Care",
+        responsibility: "Responsible for creating a clean and orderly environment of the house.",
+        role: `<li>Perform a variety fo cleaning activities such as sweeping, mopping, dusting, and polishing</li>
+                        <li>Ensuring all rooms are cared for and inspected according to standards</li>
+                        <li>Protect equipment and make sure there are no inadequacies</li>
+                        <li>Notify superiors on any damages, deficits and disturbances</li>
+                        <li>Deal with reasonable complaints/requests with professionalism and patience</li>`
     },
     {
         name: "Laundry Attendant",
         address: "USA",
         category: "General Worker",        
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
+        responsibility: "To support the functions of our establishment and the need of customers, playing a crucial role in the presentation of the establishment by ensuring all textiles are well cared for and maintained",
         role: `
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>`
+                        <li>Sorting, washing, drying, pressing, and folding clothing and other textile items</li>
+                        <li>Removing stains from items using the appropriate procedures</li>
+                        <li>Performing minor sewing duties as needed</li>`
     },
     {
         name: "Labourer",
         address: "St. Micheal, Barbados",
         category: "Construction",
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
-        role: `
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>`
+        responsibility: "Responsible for various supporting tasks in warehouses, construction sites or other similar settings.",
+        role: `<li>Cleaning up worksites</li>
+                <li>Helping erect scaffolding</li>
+                <li>Handling materials</li>
+                <li>Transporting materials</li>`
     },
     {
         name: "Housekeeper",
         address: "St.Lucy, Barbados",
         category: "Home Care",
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
-        role: `
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>    `
+        responsibility: "Responsible for creating a clean and orderly environment of the house.",
+        role: `<li>Perform a variety fo cleaning activities such as sweeping, mopping, dusting, and polishing</li>
+                        <li>Ensuring all rooms are cared for and inspected according to standards</li>
+                        <li>Protect equipment and make sure there are no inadequacies</li>
+                        <li>Notify superiors on any damages, deficits and disturbances</li>
+                        <li>Deal with reasonable complaints/requests with professionalism and patience</li>`
     },
     {
         name: "Babysitting",
         address: "Colindale, Egdware, UK",
         category: "Child Care",
-        responsibility: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, veniam voluptatem ipsum laborum nostrum sed odio! Obcaecati aliquid earum reprehenderit ullam, molestias minima libero unde quaerat iusto ex ipsam nemo a debitis, distinctio mollitia expedita? Soluta omnis necessitatibus praesentium facilis rem adipisci ex laboriosam quae numquam inventore in eum accusantium quidem, velit eos, deserunt doloribus. Laborum praesentium enim deserunt, distinctio, labore sint soluta quisquam possimus, at dolorum adipisci? Quia aliquam aut inventore libero placeat facilis beatae modi, recusandae quam, eligendi amet numquam, voluptas corporis nobis sint ipsam quos porro harum delectus iusto soluta! Quaerat, at dolores ab perspiciatis reiciendis totam!",
-        role: `<li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>`
+        responsibility: "Responsible for the care of a child.",
+        role: `<li>Ensuring child safety</li>
+                        <li>Preparing meals and snacks</li>
+                        <li>Helping with homework</li>
+                        <li>Changing diapers</li>
+                        <li>Landry and light housework</li>`
     },
 ]
 
