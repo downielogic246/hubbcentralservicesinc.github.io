@@ -1,27 +1,7 @@
 const reviews = [
     {
-        name: "Jack Smith",
-        comment: "yabba bddsifhdufduhfaufhausdfdubadfhab sdfhhsfusn suhsduf hshf s",
-    },
-    {
-        name: "Paul Duder",
-        comment: "fsfwf arg zfgshtebtyjtuk ry jdj  jfhj usf shj dyjwy",
-    },
-    {
-        name: "John Johnson",
-        comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
-    },
-    {
-        name: "Jaden Seal",
-        comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
-    },
-    {
-        name: "Jaxson Jackson",
-        comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
-    },
-    {
-        name: "Kyle Woodland",
-        comment: "rgergsth sthsrthergcasfhsstvh th athsghst hh wrth sthxgnr6jy jajsrj",
+        name: "Xolani Jemmott",
+        comment: "Hubb Central Services Inc. has a lot to consider. They have a lot of options to choose from that can definitely be useful to the average citizen.",
     },
 ]
 
