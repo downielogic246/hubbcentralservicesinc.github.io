@@ -1,5 +1,7 @@
 // import {Links} from './fygaro.links.js';
 
+//import the choice from either membership or set a local variable and unset after use
+
 const closeCheckOut = document.querySelector(".close");
 
 // const back = document.querySelector(".goBack");
@@ -36,7 +38,6 @@ let method = undefined;
 
 methodBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
-        // console.log(btn.dataset)
 
         method = btn.dataset.method === 'online' ? 'online' : 'person'
     })
@@ -49,10 +50,8 @@ continueBtn.addEventListener('click', ()=> {
     }
 
     if ( method === 'online'){
-        console.log('link to go to');
+        
     }
-
-    console.log(subject)
 })
 
 const closeForm = document.querySelector('.close-form');
