@@ -121,10 +121,11 @@ const serviceHeadingPrice = document.querySelector(".servicesPrice");
 
 const servicesContainer = document.querySelector(".services-container");
 
+const appointmentContainer = document.querySelector(".appointment-container");
 
 const slideShowAppointmentBtn = document.querySelector(".servicesAppointmentButton");
 
-
+const subject = document.getElementById('_subject');
 // const onlinePaymentMethod = document.querySelector(".online");
 
 // const backToPay = document.querySelector(".goBack");
@@ -225,20 +226,3 @@ window.addEventListener("DOMContentLoaded", ()=>{
     serviceHeadingPrice.innerHTML = `${services[0].priceString}`;
 
 });
-
-const methodBtn = document.querySelectorAll('.method-label');
-const continueBtn = document.querySelector('.continue-button')
-let method = undefined;
-
-methodBtn.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        // console.log(btn.dataset)
-
-        method = btn.dataset.method === 'online' ? 'online' : 'person'
-    })
-})
-
-
-continueBtn.addEventListener('click', ()=> {
-    console.log(method)
-})
