@@ -80,7 +80,7 @@
 } */
 .book-appointment {
     position: fixed;
-    background-image: url(/Photos/appointment.jpg);
+    background-image: url(https://mardanca.github.io/hubbcentralservicesinc.github.io/Photos/appointment.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
