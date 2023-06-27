@@ -1,17 +1,17 @@
-const bronze_link= "";
-const silver_link= "";
-const gold_link= "";
-const ml_link= "";
-const rdl_link= "";
-const uva_link= "";
-const ceta_link= "";
-const ubp_link= "";
-const cv_link= "";
-const tn_link= "";
-const lt_link= "";
-const it_link= "";
-const pcoc_link= "";
-const pit_link= "";
-const eali_link= "";
-const il_link= "";
-const dp_link= "";
+export const Links = {
+  bronze_link: "https://www.fygaro.com/en/payments/d270feba-3001-4b18-b388-e2695c0276d6/buy-now",
+  silver_link: "https://www.fygaro.com/en/payments/12ba3620-f619-45c5-b9df-e7d44e0e6a43/buy-now",
+  gold_link: "https://www.fygaro.com/en/payments/26c0a860-3923-4bee-a167-75aa08397a07/buy-now",
+  plat_link: "https://www.fygaro.com/en/payments/9f6117f6-f5fb-4fb1-84d9-a3c8e06b56a3/buy-now",
+  ml_link: "https://www.fygaro.com/en/payments/c4eee786-ba2f-4c92-8b9b-2ab2dd4298e7/buy-now",
+//   rdl_link: "",
+  uva_link:
+    "https://www.fygaro.com/en/payments/c6cac50b-2bea-4306-a09e-9a8531ab439c/buy-now",
+  ceta_link: "https://www.fygaro.com/en/payments/5cb16cb7-6a73-448a-a9a9-9332f74ff10e/buy-now",
+//   ubp_link: "",
+  cv_link: "https://www.fygaro.com/en/payments/c1ac599f-8479-4512-99f6-1ff3dcf0150b/buy-now",
+  tn_link: "https://www.fygaro.com/en/payments/141a10ed-33c5-4881-99e2-63d96419200f/buy-now",
+  lt_link: "https://www.fygaro.com/en/payments/b11776dc-fe7a-4138-9409-c8842401c139/buy-now",
+  it_link: "https://www.fygaro.com/en/payments/ebf764ee-59c3-404e-9e83-2c1c5823b49c/buy-now",
+  pcoc_link: "https://www.fygaro.com/en/payments/ed88597b-e986-4a60-9cec-37a4fd58ff33/buy-now",
+};

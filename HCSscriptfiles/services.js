@@ -1,11 +1,15 @@
+import {Links} from './fygaro.links.js';
+
+// console.log(Links)
+
 const services = [
     {
         id:"ML",
         name: "Micro Loans",
         priceString: "BBD $50.00",
-        photo: "/HubbCentralServices/Photos/ML.jpg",
+        photo: "Photos/ML.jpg",
         amount: true,
-        link: "",
+        link: Links.ml_link,
     },
     {
         id:"RDL",
@@ -13,7 +17,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/RDL.jpg",
         amount: false,
-        link: "", 
     },
     {
         id:"UVA",
@@ -21,7 +24,7 @@ const services = [
         priceString: "BBD $400.00",
         photo: "Photos/UVA.jpg",
         amount: true,
-        link: "",
+        link: Links.uva_link,
     },
     {
         id:"CETA",
@@ -29,7 +32,7 @@ const services = [
         priceString: "BBD $40.00",
         photo: "Photos/CETA.jpg",
         amount: true,
-        link: "",
+        link: Links.ceta_link,
     },
     {
         id:"UBP",
@@ -37,7 +40,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/UBP.jpg",
         amount: false,
-        link: "",
     },
     {
         id:"CV",
@@ -45,7 +47,7 @@ const services = [
         priceString: "BBD $50.00",
         photo: "Photos/CV.jpg",
         amount: true,
-        link: "",
+        link: Links.cv_link,
     },
     {
         id:"TN",
@@ -53,7 +55,7 @@ const services = [
         priceString: "BBD $50.00",
         photo: "Photos/TN.jpg",
         amount: true,
-        link: "",
+        link: Links.tn_link,
     },
     {
         id:"LT",
@@ -61,7 +63,7 @@ const services = [
         priceString: "BBD $20.00",
         photo: "Photos/LT.jpg",
         amount:true,
-        link: "",
+        link: Links.lt_link,
     },
     {
         id:"IT",
@@ -69,7 +71,7 @@ const services = [
         priceString: "BBD $50.00",
         photo: "Photos/IT.jpg",
         amount: true,
-        link: "",
+        link: Links.it_link,
     },
     {
         id:"PCOC",
@@ -77,7 +79,7 @@ const services = [
         priceString: "BBD $50.00",
         photo: "Photos/PCOC.jpg",
         amount: true,
-        link: "",
+        link: Links.pcoc_link,
     },
     {
         id:"PIT",
@@ -85,7 +87,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/usvisa.jpg",
         amount: false,
-        link: "",
     },
     {
         id:"EALI",
@@ -93,7 +94,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/usvisa.jpg",
         amount: false,
-        link: "",
     },
     {
         id:"IL",
@@ -101,7 +101,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/usvisa.jpg",
         amount: false,
-        link: "",
     },
     {
         id:"DP",
@@ -109,7 +108,6 @@ const services = [
         priceString: "Price varies",
         photo: "Photos/usvisa.jpg",
         amount: false,
-        link: "",
     },
 
 ]
@@ -127,9 +125,9 @@ const servicesContainer = document.querySelector(".services-container");
 const slideShowAppointmentBtn = document.querySelector(".servicesAppointmentButton");
 
 
-const onlinePaymentMethod = document.querySelector(".online");
+// const onlinePaymentMethod = document.querySelector(".online");
 
-const backToPay = document.querySelector(".goBack");
+// const backToPay = document.querySelector(".goBack");
 
 const selectOptions = document.getElementById("servicesList");
 // console.log(selectOptions)
@@ -203,7 +201,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     </div>
     <div class="servicesAppointmentButton-container">
         <button class="servicesAppointmentButton book">
-            BOOK APPOINTMENT
+            pay now
         </button>
     </div>`;
 
@@ -227,3 +225,20 @@ window.addEventListener("DOMContentLoaded", ()=>{
     serviceHeadingPrice.innerHTML = `${services[0].priceString}`;
 
 });
+
+const methodBtn = document.querySelectorAll('.method-label');
+const continueBtn = document.querySelector('.continue-button')
+let method = undefined;
+
+methodBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        // console.log(btn.dataset)
+
+        method = btn.dataset.method === 'online' ? 'online' : 'person'
+    })
+})
+
+
+continueBtn.addEventListener('click', ()=> {
+    console.log(method)
+})

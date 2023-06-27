@@ -78,21 +78,47 @@
     background-color: var(--footerColour-background-colour);
     color: var(--mainColour-color);
 } */
+.book-appointment {
+    position: fixed;
+    background-image: url(/Photos/appointment.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.close-form{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 25px;
+    font-size: 2rem;
+    background: none;
+    border: 0;
+    color: red;
+}
 .book-container{
     position: relative;
     display: grid;
-    grid-template-areas: 'name contact email'
-    'date date date'
-    'submit submit submit';
+    grid-template-areas: 'name'
+    ' contact'
+    ' email'
+    'date '
+    'submit ';
     width: 100%;
     height: 100%;
-    row-gap: 10px;
-    grid-template-columns: 33.33% 33.33% 33.33% ;
+    /* align-items: center; */
+    justify-content: center;
+    row-gap: 30px;
 }
 
 [class*="client"]{
-    width: 100%;
+    color: aliceblue;
+    width: 500px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -101,13 +127,18 @@
     font-size: 3rem;
 }
 
+[class*='client'] label{
+    align-self: start;
+    font-size: 1.5rem;
+}
+
 
 [id*="c"]{
-    width: 90%;
-    height: 40%;
+    width: 100%;
+    height: 50px;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid aliceblue;
 }
 
 .clientName{
@@ -124,15 +155,40 @@
 }
 .submit{
     grid-area: submit;
-    width: 100%;
+    width: max-content;
     padding: 10px 0px;
+
 }
 
 #submitClient{
-    width: 30%;
-    padding: 15px 10px;
+    color: aliceblue;
+    border-color: aliceblue;
+    border-width: 3px;
+    width: max-content;
+    padding: 10px 50px;
     background-color: var(--footerColour-background-colour);
-    font-size: 3rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    position: absolute;
+        right: 30px;
+        bottom: 30px;
+}
+
+#submitClient i{
+    padding-left: 20px;
+}
+
+.book-title{
+    text-transform: uppercase;
+    padding: 100px 0;
+    font-size: 75px;
+    color: aliceblue;
+}
+
+.book-desc{
+    color: aliceblue;
+    padding: 50px 0;
+    font-size: 25px;
 }
 
 .appointment-close{
@@ -155,7 +211,7 @@
 #day{
     padding: 10px 0px;
     margin-top: 20px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .goBack{
@@ -203,7 +259,7 @@
     } */
 
     @media (max-width: 1688px){
-        .book-container{
+        /* .book-container{
             display: grid;
             grid-template-areas: 'name contact'
             'email email'
@@ -213,17 +269,11 @@
             grid-template-columns: 50% 50% ;
             justify-items: center;
             row-gap: 50px;
-        }
+        } */
         [class*="client"]{
-    width: 80%;
+    /* width: 80%; */
     height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
 }
-
     }
 
     @media (max-width: 1440px){
@@ -248,7 +298,7 @@
             font-size: 2rem;
         }
         #submitClient{
-            width: 30%;
+            /* width: 30%; */
             padding: 15px 10px;
             background-color: var(--footerColour-background-colour);
             font-size: 2rem;
@@ -259,10 +309,7 @@
         [class*="client"]{
             width: 80%;
             height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            align-items: start;
             font-size: 2rem;
         }
     }
