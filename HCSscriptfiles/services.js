@@ -1,5 +1,5 @@
 import { Links } from "./fygaro.links.js";
-let onlineService = undefined;
+// let onlineService = undefined;
 
 // console.log(Links)
 
@@ -10,7 +10,6 @@ const services = [
     priceString: "BBD $50.00",
     photo: "Photos/ML.jpg",
     amount: true,
-    link: Links.ml_link,
   },
   {
     id: "RDL",
@@ -25,7 +24,6 @@ const services = [
     priceString: "BBD $400.00",
     photo: "Photos/UVA.jpg",
     amount: true,
-    link: Links.uva_link,
   },
   {
     id: "CETA",
@@ -48,7 +46,6 @@ const services = [
     priceString: "BBD $50.00",
     photo: "Photos/CV.jpg",
     amount: true,
-    link: Links.cv_link,
   },
   {
     id: "TN",
@@ -56,7 +53,6 @@ const services = [
     priceString: "BBD $50.00",
     photo: "Photos/TN.jpg",
     amount: true,
-    link: Links.tn_link,
   },
   {
     id: "LT",
@@ -64,7 +60,6 @@ const services = [
     priceString: "BBD $20.00",
     photo: "Photos/LT.jpg",
     amount: true,
-    link: Links.lt_link,
   },
   {
     id: "IT",
@@ -72,7 +67,6 @@ const services = [
     priceString: "BBD $50.00",
     photo: "Photos/IT.jpg",
     amount: true,
-    link: Links.it_link,
   },
   {
     id: "PCOC",
@@ -80,7 +74,6 @@ const services = [
     priceString: "BBD $50.00",
     photo: "Photos/PCOC.jpg",
     amount: true,
-    link: Links.pcoc_link,
   },
   {
     id: "PIT",
@@ -221,7 +214,11 @@ window.addEventListener("DOMContentLoaded", () => {
         "Appointment to pay " +
         btn.parentNode.parentNode.childNodes[1].childNodes[1].innerHTML;
 
-      // console.log(btn.parentElement.parentElement.childNodes[3].childNodes[1].textContent)
+      console.log(btn.parentElement.parentElement.id)
+
+      localStorage.setItem('onlineService', btn.parentElement.parentElement.id)
+
+      console.log(localStorage)
       // let
 
       // let selected = btn.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML;
