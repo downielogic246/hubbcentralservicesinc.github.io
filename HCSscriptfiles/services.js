@@ -138,6 +138,7 @@ selectOptions.addEventListener("change", () => {
 const setCheckout = () => {
   window.localStorage.setItem("checkout", true);
   appointmentContainer.classList.remove("no-show");
+
 };
 
 slideShowAppointmentBtn.addEventListener("click", () => {
@@ -214,11 +215,11 @@ window.addEventListener("DOMContentLoaded", () => {
         "Appointment to pay " +
         btn.parentNode.parentNode.childNodes[1].childNodes[1].innerHTML;
 
-      console.log(btn.parentElement.parentElement.id)
+      // console.log(btn.parentElement.parentElement.id)
 
       localStorage.setItem('onlineService', btn.parentElement.parentElement.id)
 
-      console.log(localStorage)
+      // console.log  (localStorage)
       // let
 
       // let selected = btn.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML;

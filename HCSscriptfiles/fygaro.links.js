@@ -1,18 +1,18 @@
 export const Links = [
   {
-    id: "BRONZE",
+    id: "bronze",
     link: "https://www.fygaro.com/en/payments/d270feba-3001-4b18-b388-e2695c0276d6/buy-now",
   },
   {
-    id: "SILVER",
+    id: "silver",
     link: "https://www.fygaro.com/en/payments/12ba3620-f619-45c5-b9df-e7d44e0e6a43/buy-now",
   },
   {
-    id: "GOLD",
+    id: "gold",
     link: "https://www.fygaro.com/en/payments/26c0a860-3923-4bee-a167-75aa08397a07/buy-now",
   },
   {
-    id: "PLAT",
+    id: "platinum",
     link: "https://www.fygaro.com/en/payments/9f6117f6-f5fb-4fb1-84d9-a3c8e06b56a3/buy-now",
   },
   {

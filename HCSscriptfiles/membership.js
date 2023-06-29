@@ -8,6 +8,10 @@ const small_services = [
     "Free CV Revamp"
 ]
 
+const setItem = (x) => {
+    localStorage.setItem('onlineService', x);
+}
+
 const selectBtn = document.querySelectorAll(".selectBtn");
 const smallBtn = document.querySelectorAll(".small");
 const closeMember = document.querySelector(".closeMember");
@@ -16,8 +20,12 @@ const memberTitle = document.querySelector(".memberInfo-title");
 const memberServices = document.querySelector(".memberInfo-services");
 // const payOnline = document.querySelector(".online");
 // console.log(subjectOfEmail.value)
+const appointmentContainer = document.querySelector(".appointment-container");
 
-const checkMark = `<i class="fa-solid fa-check"></i> `;
+const checkMark = `<i class="fa-solid fa-check"></i>`
+
+
+const subject = document.getElementById("_subject");
 
 selectBtn.forEach( btn => {
     btn.addEventListener("click", (e)=>{
@@ -29,6 +37,8 @@ selectBtn.forEach( btn => {
         if( e.target.classList.contains("memberInfo-select") ){
             closeMember.click();
         }
+
+        setItem(btn.parentNode.childNodes[1].innerHTML)
 
     })
 })
@@ -68,11 +78,20 @@ smallBtn.forEach( btn => {
         memberTitle.innerHTML = btn.childNodes[1].innerHTML;
         
         console.log(memberTitle.innerHTML)
+        // setItem(memberTitle.innerHTML)
+
         subject.value = btn.childNodes[1].innerHTML + " membership payment"
 
-        console.log(subject.value)
+
+        // console.log(subject.value)
 
     })
+})
+
+const memberSelect = document.querySelector('.memberInfo-select')
+
+memberSelect.addEventListener('click', () => {
+    console.log('clicked smaller btn')
 })
 
 closeMember.addEventListener("click", ()=>{

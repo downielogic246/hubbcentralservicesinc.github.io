@@ -1,10 +1,10 @@
 import {Links} from './fygaro.links.js';
 
-const noLinks = Links.filter((link)=>{
-    return link.link === undefined;
-  })
+// const noLinks = Links.filter((link)=>{
+//     return link.link === undefined;
+//   })
 
-  console.log(noLinks)
+//   console.log(noLinks)
 //import the choice from either membership or set a local variable and unset after use
 
 const closeCheckOut = document.querySelector(".close");

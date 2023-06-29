@@ -25,44 +25,77 @@
   </head>
   <body>
     <div class="appointment-container no-show">
-        <div class="appointment">
-            <div class="appointment-close">
-                <button class="close">
-                    Close
-                </button>
-            </div>
-            <h1 class="appointment-title">
-                book an appointment
-            </h1>
-                <div class="book-appointment">
-                    <form action="https://formspree.io/f/xrgvwonr" method="post" class="book-container">
-                       
-                        <div class="clientName">
-                            <label for="cName">Name</label>
-                            <input type="name" name="cName" id="cName">
-                        </div>
-                        <div class="clientDate">
-                            <label for="day">Date & Time</label>
-                            <input type="datetime-local" name="day" id="day" id="cDate">
-                        </div>
-                        <div class="clientPhone">
-                            <label for="cPhone">Phone Number</label>
-                            <input type="tel" name="cPhone" id="cPhone">
-                        </div>
-                        <div class="clientEmail">
-                            <label for="cEmail">Email</label>
-                            <input type="email" name="cEmail" id="cEmail">
-                        </div>
-                        
-                        <input type="hidden" id="_subject" name="_subject" value="">
-                        <div class="submit">
-                            <button type="submit" id="submitClient">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                
-            </div>
+      <div class="appointment">
+        <div class="appointment-close">
+          <button class="close">Close</button>
         </div>
+        <h1 class="appointment-title">Choose how you want to pay</h1>
+        <div class="method-container">
+          <div class="method-choice">
+            <label for="online" class="method-label" data-method="online"
+              >online
+              <input type="radio" name="method" id="online" class="method" />
+              <span class="checkmark"></span>
+            </label>
+            <label for="person" class="method-label" data-method="person"
+              >in person
+              <input
+                type="radio"
+                name="method"
+                id="person"
+                class="method"
+              /><span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="continue-container">
+            <button class="continue-button">Continue</button>
+          </div>
+          <article class="appointmentMessage"></article>
+        </div>
+      </div>
+      <div class="book-appointment">
+        <button class="close-form"><i class="fa-solid fa-xmark"></i></button>
+        <h3 class="book-title">Book an appointment</h3>
+        <p class="book-desc">
+          Please fill out the form below to book the appointment with Hubb
+          Central Services Inc
+        </p>
+        <form
+          action="https://formspree.io/f/mjvdqpnd"
+          method="post"
+          class="book-container"
+        >
+          <div class="clientName">
+            <label for="cName">Name</label>
+            <input type="name" name="Name" id="cName" required />
+          </div>
+          <div class="clientDate">
+            <label for="cDate">Date & Time</label>
+            <input
+              type="datetime-local"
+              name="Date"
+              id="day"
+              id="cDate"
+              required
+            />
+          </div>
+          <div class="clientPhone">
+            <label for="cPhone">Phone Number</label>
+            <input type="tel" name="Phone" id="cPhone" required />
+          </div>
+          <div class="clientEmail">
+            <label for="cEmail">Email</label>
+            <input type="email" name="Email" id="cEmail" required />
+          </div>
+
+          <input type="hidden" id="_subject" name="_subject" value="" />
+          <div class="submit">
+            <button type="submit" id="submitClient">
+              Submit<i class="fa-sharp fa-solid fa-check fa-beat-fade"></i>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
     <section class="main-area">
       <div class="mainContent">
@@ -394,7 +427,7 @@
       </div>
     </footer>
     <script src="HCSscriptfiles/mainscript.js"></script>
-    <script src="HCSscriptfiles/checkout.js"></script>
-    <script src="HCSscriptfiles/membership.js"></script>
+    <script type="module" src="HCSscriptfiles/checkout.js"></script>
+    <script type="module" src="HCSscriptfiles/membership.js"></script>
   </body>
 </html>
