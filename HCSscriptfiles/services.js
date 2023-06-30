@@ -1,4 +1,5 @@
 import { Links } from "./fygaro.links.js";
+// import { setItem } from "./membership.js";
 // let onlineService = undefined;
 
 // console.log(Links)
@@ -127,13 +128,36 @@ const subject = document.getElementById("_subject");
 // const backToPay = document.querySelector(".goBack");
 
 const selectOptions = document.getElementById("servicesList");
+// const selectOptions = document.querySelectorAll('.selectOptions');
 // console.log(selectOptions)
 
-selectOptions.addEventListener("change", () => {
-  //   console.log(selectOptions.value);
+// selectOptions.forEach(opt => {
+//   opt.addEventListener('change', () =>{
+
+//     console.log(opt)
+//     // setCheckout();
+//     // subject.value = 'Appointment to pay ' + e.currentTarget.innerHTML
+
+//     // console.log(e.currentTarget.innerHTML)
+//   })
+// })
+
+selectOptions.addEventListener('click', (e) => {
+      console.log(e);
+    console.log(selectOptions.value);
   setCheckout();
   subject.value = "Appointment to pay " + selectOptions.value;
+  // localStorage.setItem('onlineService',selectOptions.dataset.option);
+  console.log(selectOptions.dataset.option)
 });
+
+// selectOptions.forEach((opt) =>{
+//   // console.log(opt)
+//   opt.addEventListener('click', () =>{
+//     console.log(opt)
+//   })
+  
+// })
 
 const setCheckout = () => {
   window.localStorage.setItem("checkout", true);

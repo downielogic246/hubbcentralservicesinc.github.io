@@ -1,3 +1,4 @@
+
 const small_services = [
     "Circulation of CV/Resume to employers",
     "Free 1/2 hour interview clinic",
@@ -91,7 +92,9 @@ smallBtn.forEach( btn => {
 const memberSelect = document.querySelector('.memberInfo-select')
 
 memberSelect.addEventListener('click', () => {
-    console.log('clicked smaller btn')
+    // console.log('clicked smaller btn', memberSelect.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML);
+    setItem(memberSelect.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML)
+    console.log(localStorage)
 })
 
 closeMember.addEventListener("click", ()=>{
