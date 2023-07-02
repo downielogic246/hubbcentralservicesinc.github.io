@@ -112,7 +112,7 @@ const filterClose = document.querySelector(".filterClose");
 const filterContent = document.querySelector(".btnContainer");
 const applyBtn = document.querySelector(".applyNow");
 const applyForm = document.querySelector(".applyForm");
-const closeApply = document.querySelector(".closeApply");
+// const closeApply = document.querySelector(".closeApply");
 const subjectOfEmail = document.getElementById("subject");
 const careerTitle = document.querySelector(".careerTitle");
 
@@ -153,12 +153,13 @@ applyBtn.addEventListener("click", ()=>{
 
 })
 
-closeApply.addEventListener("click", ()=>{
-    applyForm.style.display = "none";
-})
+// closeApply.addEventListener("click", ()=>{
+//     applyForm.style.display = "none";
+// })
 
 closeApplicationForm.addEventListener("click", ()=>{
     careerContainer.style.top = "-120%";
+    applyForm.style.display = "none";
 })
 
 filterBtn.addEventListener("click", () => {
