@@ -16,22 +16,21 @@
     flex-direction: column;
     align-items: center;
     width: 55%;
-    height: 90% !important;
+    height: 600px;
     background-color: rgb(236, 236, 236);
     border-radius: 5px;
     padding: 20px 0px;
 }
 
 .appointment-title{
-    position: relative;;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 2px;
     font-weight: bold;
-    width: 60%;
-    border-bottom: 1px solid #050505;
+    width: 95%;
     height: 30%;
     font-size: 4rem;
 }
@@ -153,6 +152,7 @@
 }
 .clientDate{
     grid-area: date;
+    margin-bottom: 50px;
 }
 .clientPhone{
     grid-area: contact;
@@ -162,8 +162,7 @@
 }
 .submit{
     grid-area: submit;
-    width: max-content;
-    padding: 10px 0px;
+    padding: 10px 30px;
 
 }
 
@@ -177,13 +176,10 @@
     font-size: 2rem;
     border-radius: 50px;
     position: absolute;
-        right: 30px;
-        bottom: 30px;
+    right: 10px;
+    bottom: 10px;
 }
 
-#submitClient i{
-    padding-left: 20px;
-}
 
 .book-title{
     text-transform: uppercase;
@@ -245,7 +241,7 @@
 }
 
 .method-choice {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,7 +266,7 @@ row-gap: 25px;
     user-select: none;
     /* box-shadow: -10px -10px 10px grey; */
     border-radius: 100px;
-    box-shadow: inset 10px 10px 20px rgba(128, 128, 128, 0.416), 5px 5px 20px rgba(128, 128, 128, 0.461);
+    box-shadow: inset 10px 10px 20px rgba(128, 128, 128, 0.416), inset 5px 5px 20px rgba(128, 128, 128, 0.461);
 }
 
 .method-choice>label input {
@@ -280,7 +276,7 @@ row-gap: 25px;
 }
 
 .method-choice>label:hover{
-    box-shadow: inset 30px 30px 20px rgba(255, 255, 255, 0.724),
+    box-shadow: inset 30px 40px 20px rgba(255, 255, 255, 0.724),
        inset 5px 5px 20px rgba(129, 129, 129, 0.461);
 }
 
@@ -414,12 +410,6 @@ row-gap: 25px;
             margin-top: 20px;
             font-size: 2rem;
         }
-        #submitClient{
-            /* width: 30%; */
-            padding: 15px 10px;
-            background-color: var(--footerColour-background-colour);
-            font-size: 2rem;
-        }
         .goBack{
             font-size: 1rem;
         }
@@ -505,7 +495,9 @@ row-gap: 25px;
             height: max-content;
             font-size: 1rem;
         }
+        
     }
+    
     @media (max-width: 731px){
         
         
@@ -534,9 +526,6 @@ row-gap: 25px;
         .book-container{
             row-gap: 10px;
         }
-    }
-    @media (max-width: 713px){
-        
 
         [class*="client"]{
             font-size: 1.25rem;
@@ -556,13 +545,52 @@ row-gap: 25px;
             font-size: 0.75rem;
         }
     }
+    
     @media (max-width: 500px){
         
         .appointment{
             width: 100%;
             height: 100% !important;
         }
+
+        
     }
+}
+@media (max-width: 940px) {
+    .book-title {
+            font-size: 60px;
+        }
+    
+        .book-desc {
+            font-size: 20px;
+        }
+}
+@media (max-width:760px) {
+    .book-title {
+        font-size: 50px;
+    }
+}
+@media (max-width:508px) {
+        .book-title{
+            font-size: 30px;
+        }
+
+        .book-desc{
+            font-size: 15px;
+        }
+    }
+
+@media (max-width:500px) {
+    .book-desc{
+            display: none;
+        }
+}
+
+@media (max-width:318px) {
+    [class*='client'] label {
+            align-self: start;
+            font-size: 1.25rem;
+        }
 }
 
 @media (orientation: portrait){
@@ -736,7 +764,11 @@ row-gap: 25px;
     }
     @media (max-width: 713px){
         
-
+        .method-choice>label{
+            width: 250px;
+            padding: 10px;
+            font-size: 1.5rem;
+        }
         [class*="client"]{
             font-size: 1.25rem;
         }
