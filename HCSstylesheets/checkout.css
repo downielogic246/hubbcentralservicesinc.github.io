@@ -17,7 +17,7 @@
     align-items: center;
     width: 55%;
     height: 90% !important;
-    background-color: var(--mainColour-color);
+    background-color: rgb(236, 236, 236);
     border-radius: 5px;
     padding: 20px 0px;
 }
@@ -79,23 +79,23 @@
     color: var(--mainColour-color);
 } */
 .book-appointment {
+    top: 0;
     position: fixed;
     background-image: url(https://mardanca.github.io/hubbcentralservicesinc.github.io/Photos/appointment.jpg);
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -100%;
-    transition-property: top;
-    transition-duration: 3s;
+    transition-property: height;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .down{
-    top:0;
+    height:100vh;
 }
 .close-form{
     display: block;
@@ -250,7 +250,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+row-gap: 25px;
     height: max-content;
 }
 
@@ -261,13 +261,16 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    height: 50px;
+    height: max-content;
     font-size: 2rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    /* box-shadow: -10px -10px 10px grey; */
+    border-radius: 100px;
+    box-shadow: inset 10px 10px 20px rgba(128, 128, 128, 0.416), 5px 5px 20px rgba(128, 128, 128, 0.461);
 }
 
 .method-choice>label input {
@@ -276,11 +279,15 @@
     cursor: pointer;
 }
 
+.method-choice>label:hover{
+    box-shadow: inset 30px 30px 20px rgba(255, 255, 255, 0.724),
+       inset 5px 5px 20px rgba(129, 129, 129, 0.461);
+}
+
 #online,
 #person {
     width: 25px;
     height: 25px;
-    background: red;
 }
 
 .checkmark {
@@ -291,12 +298,13 @@
     width: 25px;
     background-color: transparent;
     border: 3px outset var(--footerColour-background-colour);
+    border-radius: 100%;
     /* color: var(--footerColour-background-colour); */
 }
-
+/* 
 .method-choice>label:hover input~.checkmark {
     background-color: #ccc;
-}
+} */
 
 .method-choice>label input:checked~.checkmark {
     background-color: transparent;
