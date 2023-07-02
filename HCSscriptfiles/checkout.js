@@ -63,7 +63,7 @@ continueBtn.addEventListener('click', ()=> {
        Links.forEach((link)=>{
         // console.log(link);
         if(link.id === onlineServices){
-            console.log(link.link);
+            // console.log(link.link);
             if (link.link === undefined){
                 // const priceVaries = document.createElement('article');
                 // const priceVariesMessage = document.createTextNode('Since the price varies on this service, kindly book an appointment to pay for this service.');

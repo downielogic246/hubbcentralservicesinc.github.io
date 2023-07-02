@@ -127,7 +127,21 @@ const subject = document.getElementById("_subject");
 
 // const backToPay = document.querySelector(".goBack");
 
+const headPayNow = document.getElementById("inHeadingAppointmentButton");
+
 const selectOptions = document.getElementById("servicesList");
+
+headPayNow.addEventListener('click',()=>{
+  switch(headPayNow.parentElement.parentElement.childNodes[3].childNodes[1].innerHTML){
+     case 'Micro Loans': localStorage.setItem('onlineService', 'ML');
+     break;
+
+     case 'US Visa Application': localStorage.setItem('onlineService', 'UVA');
+     break;
+     case 'Renewal of Driver\'s License': localStorage.setItem('onlineService', 'RDL');
+     break;
+  }
+})
 // const selectOptions = document.querySelectorAll('.selectOptions');
 // console.log(selectOptions)
 
@@ -142,9 +156,53 @@ const selectOptions = document.getElementById("servicesList");
 //   })
 // })
 
-selectOptions.addEventListener('click', (e) => {
-      console.log(e);
+selectOptions.addEventListener('change', () => {
     console.log(selectOptions.value);
+    if( selectOptions.value === 'Micro Loans'){
+      localStorage.setItem('onlineService','ML' )
+    };
+    if( selectOptions.value === 'Renewal of Driver\'s License'){
+      localStorage.setItem('onlineService','RDL' )
+    };
+    if( selectOptions.value === 'US Visa Application'){
+      localStorage.setItem('onlineService','UVA' )
+    };
+    if( selectOptions.value === 'Canadian ETA'){
+      localStorage.setItem('onlineService','CETA' )
+    };
+    if( selectOptions.value === 'Utility Bill Payments'){
+      localStorage.setItem('onlineService','UBP' )
+    };
+    if( selectOptions.value === 'CV / Rusume Writing'){
+      localStorage.setItem('onlineService','CV' )
+    };
+    if( selectOptions.value === 'Tamis Numbers'){
+      localStorage.setItem('onlineService','TN' )
+    };
+    if( selectOptions.value === 'Police Certificate of Character'){
+      localStorage.setItem('onlineService','PCOC' )
+    };
+    if( selectOptions.value === 'Prison Inmate Top-Ups'){
+      localStorage.setItem('onlineService','PIT' )
+    };
+    if( selectOptions.value === 'Employment Agency Local & International'){
+      localStorage.setItem('onlineService','EALI' )
+    };
+    if( selectOptions.value === 'Document Preparations'){
+      localStorage.setItem('onlineService','DP' )
+    };
+    if( selectOptions.value === 'Invitation Letters'){
+      localStorage.setItem('onlineService','IL' )
+    };
+    if( selectOptions.value === 'Land Tax'){
+      localStorage.setItem('onlineService','LT' )
+    };
+    if( selectOptions.value === 'Income Tax'){
+      localStorage.setItem('onlineService','IT' )
+    };
+    
+    
+    console.log(localStorage.onlineService)
   setCheckout();
   subject.value = "Appointment to pay " + selectOptions.value;
   // localStorage.setItem('onlineService',selectOptions.dataset.option);
