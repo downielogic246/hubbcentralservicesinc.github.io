@@ -111,8 +111,8 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 25% 25% 25%;
-  column-gap: 50px;
-  row-gap: 50px;
+  column-gap: 25px;
+  row-gap: 25px;
 }
 
 .service {
@@ -121,18 +121,16 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100%;
   row-gap: 20px;
-  border: 3px outset var(--footerColour-background-colour);
-  border-radius: 5px;
+  /* border: 3px outset var(--footerColour-background-colour); */
+  /* border-radius: 5px; */
+  border-bottom: 5px solid var(--footerColour-background-colour);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   color: var(--mainColour-color);
   padding: 30px;
   box-shadow: 10px 10px 30px black;
-  transition: all 0.25s ease-in-out;
-}
-
-.service:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 5px 30px rgb(90, 90, 90);
 }
 
 .servicesTitle-container,
@@ -146,6 +144,10 @@
   text-shadow: 1px 1px 10px rgb(0, 4, 28);
 }
 
+.servicesAppointmentButton-container{
+  justify-content: right;
+}
+
 .servicesTitle {
   font-size: 2.5rem;
 }
@@ -156,18 +158,27 @@
   color: var(--mainColour-color);
   background-color: var(--footerColour-background-colour);
   padding: 10px 30px;
+  
 }
 
 .book {
   background-color: rgb(0, 106, 181);
+  height: max-content;
+  width: max-content;
+  align-self: right;
+  transition: all 0.25s ease-in-out;
+  border-radius: 20px;
+  border: 1px solid var(--mainColour-color)
 }
 
 .book:hover {
-  background-color: rgba(0, 74, 138, 0.353);
+ background-color: rgb(28, 158, 250);
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgb(138, 138, 138);
 }
 
 .book:active {
-  background-color: rgb(28, 158, 250);
+  background-color: rgba(0, 74, 138, 0.353);
 }
 
 button {

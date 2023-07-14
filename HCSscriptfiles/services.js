@@ -277,7 +277,7 @@ window.addEventListener("DOMContentLoaded", () => {
     </div>
     <div class="servicesAppointmentButton-container">
         <button class="servicesAppointmentButton book">
-            pay now
+            <i class="fa-solid fa-bars-staggered"></i><i class="fa-solid fa-dollar-sign"></i>
         </button>
     </div>`;
 
