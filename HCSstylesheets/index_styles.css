@@ -1,7 +1,7 @@
 .main-area{
     background-image: url(https://mardanca.github.io/hubbcentralservicesinc.github.io/Photos/home_large.jpg);
     max-height: 100%;
-    transition: all 2s ease-in;
+    transition: all 500ms linear;
 }
 .title{
     padding: 0;
@@ -11,6 +11,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 6px;
     word-spacing: 3px;
+    /* transition: ; */
 }
 
 .main-direct, .main-link{
@@ -51,10 +52,11 @@
 }
 
 .image-container img{
-    min-height: 300px;
+    /* min-height: 300px;
     max-height: 300px;
     min-width: 500px;
-    max-width: 500px;
+    max-width: 500px; */
+    min-height: 5px;
 }
 
 .desc-container{

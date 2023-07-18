@@ -160,7 +160,7 @@
   padding: 10px 30px;
   
 }
-
+ 
 .book {
   background-color: rgb(0, 106, 181);
   height: max-content;
@@ -173,7 +173,7 @@
 
 .book:hover {
  background-color: rgb(28, 158, 250);
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 20px rgb(138, 138, 138);
 }
 
