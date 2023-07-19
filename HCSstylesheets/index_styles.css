@@ -56,7 +56,7 @@
     max-height: 300px;
     min-width: 500px;
     max-width: 500px; */
-    min-height: 5px;
+    height: 300px;
 }
 
 .desc-container{
@@ -91,9 +91,9 @@
         }
         .image-container img{
             min-height: 275px;
-            max-height: 275px;
-            min-width: 400px;
-            max-width: 400px;
+            max-height: 300px;
+            /* min-width: 400px;
+            max-width: 400px; */
         }
     }
 
@@ -116,12 +116,11 @@
         .image-container, .desc-container{
             max-height: 100%;
         }
-        .image-container img{
+        /* .image-container img{
             min-height: 175px;
-            max-height: 175px;
-            min-width: 300px;
-            max-width: 300px;
-        }
+            max-height: 300px;
+            /* min-width: 300px;
+            max-width: 300px; */
     }
 
     @media(max-width: 927px){
@@ -142,9 +141,9 @@
         }
         .image-container img{
             min-height: 175px;
-            max-height: 175px;
-            min-width: 250px;
-            max-width: 250px;
+            max-height: 275px;
+            /* min-width: 250px;
+            max-width: 250px; */
         }
     }
 
@@ -154,9 +153,9 @@
         }
         .image-container img{
             min-height: 100px;
-            max-height: 100px;
-            min-width: 200px;
-            max-width: 200px;
+            max-height: 250px;
+            /* min-width: 200px;
+            max-width: 200px; */
         }
     }
 }
@@ -176,8 +175,8 @@
         .image-container img{
             min-height: 250px;
             max-height: 250px;
-            min-width: 400px;
-            max-width: 400px;
+            /* min-width: 400px;
+            max-width: 400px; */
         }
         .mainContent{
             display: flex;
@@ -194,9 +193,9 @@
         
         .image-container img{
             min-height: 200px;
-            max-height: 200px;
-            min-width: 350px;
-            max-width: 350px;
+            max-height: 275px;
+            /* min-width: 350px;
+            max-width: 350px; */
         }
     }
 
