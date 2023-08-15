@@ -3,8 +3,8 @@ const slides = [
         title: "need a job?",
         quote: "click here to see any jobs currently available internationally & regionally",
         photo: "Photos/jobs_large.jpg",
-        link: `<i class="fa-sharp fa-solid fa-link"></i>
-        jobs`,
+        link: `Click here to view
+          <i class="fa-solid fa-long-arrow-right"></i>`,
         address: "jobs.html"
     }
     ,
@@ -12,8 +12,8 @@ const slides = [
         title: "utility bill due?",
         quote: "click here to see all services provided",
         photo:"Photos/services_large.jpg",
-        link: `<i class="fa-sharp fa-solid fa-link"></i>
-        services`,
+        link: `Click here to view
+          <i class="fa-solid fa-long-arrow-right"></i>`,
         address: "services.html",
     }    
 ];
@@ -35,12 +35,9 @@ setInterval(() => {
     mainLink.href = slides[i].address;
     mainRedirect.innerHTML = slides[i].quote;
 
-
-    console.log("changed.");
     i++;
     if ( i == 2 ){
         i = 0;
-    }    
-
+    }
 
 }, 5000);

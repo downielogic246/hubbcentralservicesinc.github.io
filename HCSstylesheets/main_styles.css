@@ -17,7 +17,13 @@ body{
     --footerColour-background-colour: #1f4454;
     --sectionColour-colour: aliceblue;
     --blackColour-colour: #050505;
+            --black: #000000a6;
+            --white: #FFFBF0;
+            --main-color: #1f4454;
+            --red: #cb0000;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cardo&display=swap');
 
 /***********************NAVIGATION LINKS STYLING**************************************/
 
@@ -75,6 +81,7 @@ body{
     width: 100%;
     height: fit-content;
     z-index: 999;
+    transition: all 200ms linear;
 }
 
 .navShadow{
