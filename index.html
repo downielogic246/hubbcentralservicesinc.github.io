@@ -35,6 +35,46 @@
         letter-spacing: 1px;
         word-spacing: 2px;
       }
+
+      .mainContent {
+        /* display: grid;
+        grid-template-columns: 5% 90% 5%;
+        width: 100%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .learn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .left-btn,
+      .right-btn {
+        position: absolute;
+        height: max-content;
+        /* background-color: red; */
+        background: none;
+        color: var(--white);
+        font-size: 40px;
+        /* top: 0; */
+        width: 50px;
+        border: 0;
+        align-self: center;
+      }
+      .right-btn {
+        right: 10px;
+      }
+      .left-btn {
+        left: 10px;
+      }
+
+      button {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -55,16 +95,13 @@
 
     <section class="main-area">
       <div class="mainContent">
-        <h1 class="title animate">need a job?</h1>
-        <p class="main-direct animate">
-          click here to see any jobs currently available internationally &
-          regionally
-        </p>
-        <br />
-        <a class="main-link animate" href="jobs.html">
-          Click here to view
-          <i class="fa-solid fa-long-arrow-right"></i>
-        </a>
+        <button class="left-btn slide-nav">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <div class="learn-container"></div>
+        <button class="right-btn slide-nav">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
       </div>
     </section>
     <header class="nav-container">
