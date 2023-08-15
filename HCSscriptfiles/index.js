@@ -40,7 +40,7 @@ const slides = [
             click here to see all membership plans
           </p>`,
         photo:"Photos/membership_large.jpg",
-        link: `<a class="main-link animate" href="membership_plan_pricing.html">
+        link: `<a class="main-link animate" href="membership_plans_pricing.html">
             Click here to view
             <i class="fa-solid fa-long-arrow-right"></i>
           </a>`,
